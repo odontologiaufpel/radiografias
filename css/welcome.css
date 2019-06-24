@@ -8,4 +8,14 @@
 }
 .container-fluid .badge {
   font-size: 2.25em;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+@media (max-width: 420px) {
+  .container-fluid .badge {
+    font-size: 1.75em;
+    overflow: hidden;
+    max-width: 100%;
+  }
 }
