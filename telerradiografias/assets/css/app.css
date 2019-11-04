@@ -131,6 +131,7 @@ html {
 }
 body {
   margin: 0;
+  background: #fffaf5;
 }
 main {
   display: block;
@@ -482,6 +483,7 @@ html body #general {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   flex-direction: row;
+  max-width: 960px;
 }
 html body #general #fullscreen {
   position: fixed;
