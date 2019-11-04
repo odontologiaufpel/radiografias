@@ -1,0 +1,184 @@
+[
+  {
+    "number": "01",
+    "name": "Perfil Mole",
+    "description": "Imagem discretamente radiopaca que representa o perfil dos tecidos moles da testa, nariz, lábios e mento.",
+    "baseImage": "./assets/img/A.jpg",
+    "printImage": "./assets/img/1.jpg"
+  },
+  {
+    "number": "02",
+    "name": "Osso Frontal",
+    "description": "Imagem radiopaca densa, localizada na fronte, acima das órbitas.",
+    "baseImage": "./assets/img/A.jpg",
+    "printImage": "./assets/img/2.jpg"
+  },
+  {
+    "number": "03",
+    "name": "Seio Frontal",
+    "description": "Ampla imagem radiolúcida, de limites bem definidos, situado no osso frontal.",
+    "baseImage": "./assets/img/B.jpg",
+    "printImage": "./assets/img/3.jpg"
+  },
+  {
+    "number": "04",
+    "name": "Órbitas",
+    "description": "Área radiolúcida arredondada abaixo do seio frontal",
+    "baseImage": "./assets/img/C.jpg",
+    "printImage": "./assets/img/4.jpg"
+  },
+  {
+    "number": "05",
+    "name": "Ossos Nasais",
+    "description": "Imagem radiopaca triangular com ápice voltado para baixo, na região superior e anterior da cavidade nasal.",
+    "baseImage": "./assets/img/A.jpg",
+    "printImage": "./assets/img/5.jpg"
+  },
+  {
+    "number": "06",
+    "name": "Seio Maxilar",
+    "description": "Área radiolúcida ampla, no terço médio da face, de contorno arredondado e bem definido por uma linha radiopaca.",
+    "baseImage": "./assets/img/E.jpg",
+    "printImage": "./assets/img/6.jpg"
+  },
+  {
+    "number": "07",
+    "name": "Processo Zigomático",
+    "description": "Densa faixa radiopaca em forma de anzol projetada no seio maxilar, acima dos molares.",
+    "baseImage": "./assets/img/A.jpg",
+    "printImage": "./assets/img/7.jpg"
+  },
+  {
+    "number": "08",
+    "name": "Fissura Ptérigopalatina",
+    "description": "Estrutura radiolúcida, em formato de gota invertida, localizada atrás  da parede posterior do seio maxilar.",
+    "baseImage": "./assets/img/B.jpg",
+    "printImage": "./assets/img/8.jpg"
+  },
+  {
+    "number": "09",
+    "name": "Sela Túrcica",
+    "description": "Concavidade de contorno radiopaco, na parte central do osso esfenóide, acima do seio esfenoidal.",
+    "baseImage": "./assets/img/B.jpg",
+    "printImage": "./assets/img/9.jpg"
+  },
+  {
+    "number": "10",
+    "name": "Seio Esfenoidal",
+    "description": "Ampla área radiolúcida, de limites bem definidos, situada abaixo da sela túrcica.",
+    "baseImage": "./assets/img/B.jpg",
+    "printImage": "./assets/img/10.jpg"
+  },
+  {
+    "number": "11",
+    "name": "Espinha Nasal Anterior",
+    "description": "Pequena área radiopaca proeminente, na região anterior da maxila, acima dos ápices dos incisivos centrais superiores.",
+    "baseImage": "./assets/img/D.jpg",
+    "printImage": "./assets/img/11.jpg"
+  },
+  {
+    "number": "12",
+    "name": "Palato duro",
+    "description": "Faixa radiopaca horizontal que se estende por toda a maxila, acima dos ápices dos dentes superiores.",
+    "baseImage": "./assets/img/D.jpg",
+    "printImage": "./assets/img/12.jpg"
+  },
+  {
+    "number": "13",
+    "name": "Palato mole",
+    "description": "Área discretamente radiopaca, posterior ao palato duro, que delimita a porção superior da orofaringe.",
+    "baseImage": "./assets/img/C.jpg",
+    "printImage": "./assets/img/13.jpg"
+  },
+  {
+    "number": "14",
+    "name": "Assoalho da Fossa Nasal",
+    "description": "Faixa radiopaca que delimita a cavidade nasal inferiormente e que muitas vezes se sobrepõe ao palato duro.",
+    "baseImage": "./assets/img/D.jpg",
+    "printImage": "./assets/img/14.jpg"
+  },
+  {
+    "number": "15",
+    "name": "Sínfise da Mandíbula",
+    "description": "Estrutura radiopaca em forma de gota, na região de incisivos inferiores, sendo delimitada por corticais ósseas espessas.",
+    "baseImage": "./assets/img/B.jpg",
+    "printImage": "./assets/img/15.jpg"
+  },
+  {
+    "number": "16",
+    "name": "Base da Mandibula",
+    "description": "Faixa radiopaca que limita a mandíbula inferiormente.",
+    "baseImage": "./assets/img/B.jpg",
+    "printImage": "./assets/img/16.jpg"
+  },
+  {
+    "number": "17",
+    "name": "Corpo da Mandíbula",
+    "description": "Porção da mandíbula que se estende da sínfise até o ângulo e da base da mandíbula até o processo alveolar. Apresenta-se como uma área radiopaca.",
+    "baseImage": "./assets/img/B.jpg",
+    "printImage": "./assets/img/17.jpg"
+  },
+  {
+    "number": "18",
+    "name": "Ângulo da Mandíbula",
+    "description": "Estrutura radiopaca curvilínea entre o corpo e ramo da mandíbula.",
+    "baseImage": "./assets/img/B.jpg",
+    "printImage": "./assets/img/18.jpg"
+  },
+  {
+    "number": "19",
+    "name": "Ramo Ascendente",
+    "description": "Estrutura radiopaca limitada superiormente pela cabeça da mandíbula e processo coronóide e inferiormente pelo ângulo da mandíbula.",
+    "baseImage": "./assets/img/B.jpg",
+    "printImage": "./assets/img/19.jpg"
+  },
+  {
+    "number": "20",
+    "name": "Cabeça da Mandíbula",
+    "description": "Estrutura radiopaca de contornos regulares e forma arredondada, localizada no limite superior e distal do ramo ascendente.",
+    "baseImage": "./assets/img/B.jpg",
+    "printImage": "./assets/img/20.jpg"
+  },
+  {
+    "number": "21",
+    "name": "Incisura Mandibular",
+    "description": "Concavidade no ramo ascendente da mandíbula, entre a cabeça da mandíbula e o processo coronóide.",
+    "baseImage": "./assets/img/E.jpg",
+    "printImage": "./assets/img/21.jpg"
+  },
+  {
+    "number": "22",
+    "name": "Processo Coronóide",
+    "description": "Estrutura radiopaca, triangular, localizada na porção anterior do ramo ascendente da mandíbula. Pode ser visualizada sobreposta a porção posterior da maxila.",
+    "baseImage": "./assets/img/E.jpg",
+    "printImage": "./assets/img/22.jpg"
+  },
+  {
+    "number": "23",
+    "name": "Células da Mastóide",
+    "description": "Áreas radiolúcidas arredondadas no interior do processo mastóide, localizadas posteriormente ao meato acústico externo.",
+    "baseImage": "./assets/img/D.jpg",
+    "printImage": "./assets/img/23.jpg"
+  },
+  {
+    "number": "24",
+    "name": "Meato Acústico Externo",
+    "description": "Área radiolúcida de formato ovóide ou arredondado anterior às células da mastóide.",
+    "baseImage": "./assets/img/E.jpg",
+    "printImage": "./assets/img/24.jpg"
+  },
+  {
+    "number": "25",
+    "name": "Oro e Nasofaringe",
+    "description": "Ampla área radiolúcida localizada à frente das vértebras e que se direciona para as cavidades bucal (orofaringe) e nasal (nasofaringe).",
+    "baseImage": "./assets/img/C.jpg",
+    "printImage": "./assets/img/25.jpg"
+  },
+  {
+    "number": "26",
+    "name": "Osso Hióide",
+    "description": "Aparece como uma radiopacidade no pescoço, à frente das vértebras cervicais.",
+    "baseImage": "./assets/img/C.jpg",
+    "printImage": "./assets/img/26.jpg"
+  }
+]
