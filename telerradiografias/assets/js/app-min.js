@@ -64,12 +64,12 @@ $(document).ready(async () => {
       $("#fullscreen").fadeIn(), $("body").css("position", "fixed");
     }),
     $(".print-areas").click(() => {
-      $("#fullscreen").css("background-image", `url(${n.baseImage})`),
+      $("#fullscreen").css("background-image", `url(${n.printImage})`),
         $(".print-areas").hide(),
         $(".remove-areas").show();
     }),
     $(".remove-areas").click(() => {
-      $("#fullscreen").css("background-image", `url(${n.printImage})`),
+      $("#fullscreen").css("background-image", `url(${n.baseImage})`),
         $(".remove-areas").hide(),
         $(".print-areas").show();
     }),
