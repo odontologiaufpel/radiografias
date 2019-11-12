@@ -649,6 +649,11 @@ html body #general .number .number-text {
   font-weight: 700;
   margin: 40px 20px 0;
 }
+
+html body #general .number {
+  width: 100%;
+}
+
 html body #general .container-image {
   margin: 20px;
 }
