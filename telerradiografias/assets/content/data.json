@@ -106,7 +106,7 @@
   },
   {
     "number": "16",
-    "name": "Base da Mandibula",
+    "name": "Base da Mandíbula",
     "description": "Faixa radiopaca que limita a mandíbula inferiormente.",
     "printImage": "./assets/img/B.jpg",
     "baseImage": "./assets/img/16.jpg"

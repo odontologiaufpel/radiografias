@@ -451,11 +451,12 @@ html body #menu .modal #stroke {
     display: flex;
     flex-wrap: wrap;
     max-height: 100%;
+    flex-direction: column;
   }
 }
 html body #menu .modal .modal-list .radio-item {
   -webkit-box-flex: 1;
-  flex: 1 1 300px;
+  flex: 1 1 60px;
 }
 html body #menu .modal .modal-list .radio-item a {
   display: block;
