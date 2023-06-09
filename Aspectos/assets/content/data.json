@@ -1,0 +1,374 @@
+[
+  {
+    "number": "01",
+    "name": "Localizada na Maxila",
+    "description": "Lesão única localizada em uma região específica da maxila, como a região anterior, a região posterior ou a região de tuberosidade, por exemplo. Importante reconhecer, pois há lesões com predileção por determinado osso e mesmo por determinado local daquele osso, ou para sugerir a origem / tipo de tecido que compõe a lesão.",
+    "printImage": "./assets/img/A.jpg",
+    "baseImage": "./assets/img/1.jpg"
+  },
+  {
+    "number": "02",
+    "name": "Localizada na Mandíbula",
+    "description": "Lesão única localizada em uma região específica da mandíbula, como a região de sínfise, corpo, ramo ascendente, ângulo ou côndilo. Importante reconhecer, pois há lesões com predileção por determinado osso e mesmo por determinado local daquele osso, ou para sugerir a origem / tipo de tecido que compõe a lesão.",
+    "printImage": "./assets/img/B.jpeg",
+    "baseImage": "./assets/img/2.jpg"
+  },
+  {
+    "number": "03",
+    "name": "Periapical",
+    "description": "Lesão que se localiza ao redor do ápice de um dente, normalmente, mas não exclusivamente, associada a processos de origem pulpar (inflamatória).",
+    "printImage": "./assets/img/C.jpeg",
+    "baseImage": "./assets/img/3.jpeg"
+  },
+  {
+    "number": "04",
+    "name": "Pericoronária",
+    "description": "Lesão que se localiza ao redor da coroa de um dente não erupcionado. Normalmente possui origem odontogênica, por apresentar proximidade com tecido dentário.",
+    "printImage": "./assets/img/D.jpg",
+    "baseImage": "./assets/img/4.jpeg"
+  },
+  {
+    "number": "05",
+    "name": " Entre as Raízes Dentárias",
+    "description": " Lesão que se localiza entre as raízes de dois dentes, muitas vezes causando o deslocamento / afastamento destas raízes. O exemplo mais típico é o do cisto periodontal lateral.",
+    "printImage": "./assets/img/5.jpg",
+    "baseImage": "./assets/img/E.jpg"
+  },
+  {
+    "number": "06",
+    "name": "Localizada na Linha Média",
+    "description": " Lesão localizada na região de incisivos (superiores ou inferiores), na linha média facial. Normalmente está associada a estruturas anatômicas destas regiões específicas, como o cisto do nasopalatino.",
+    "printImage": "./assets/img/F.png",
+    "baseImage": "./assets/img/6.png"
+  },
+  {
+    "number": "07",
+    "name": "Ultrapassando a Linha Média",
+    "description": "Densa faixa radiopaca em forma de anzol projetada no seio maxilar, acima dos molares.",
+    "printImage": "./assets/img/7.png",
+    "baseImage": "./assets/img/G.png"
+  },
+  {
+    "number": "08",
+    "name": "Acima do Canal Mandibular",
+    "description": "Lesão vista acima do limite superior (teto) do canal mandibular. Normalmente essas lesões possuem origem odontogênica, por se formarem próximas aos tecidos dentários.",
+    "printImage": "./assets/img/8.png",
+    "baseImage": "./assets/img/H.png"
+  },
+  {
+    "number": "09",
+    "name": "Abaixo do Canal Mandibular",
+    "description": "Lesão vista abaixo do limite inferior (soalho) do canal mandibular. Normalmente essas lesões possuem outra origem, que não a odontogênica, por se formarem distantes dos tecidos dentários.",
+    "printImage": "./assets/img/I.png",
+    "baseImage": "./assets/img/9.png"
+  },
+  {
+    "number": "10",
+    "name": "No Interior do Canal Mandibular",
+    "description": "Lesão vista entre o limite superior (teto) e o limite inferior (soalho) do canal mandibular. Normalmente são lesões de origem neural ou vascular, pois pelo interior do canal mandibular passam vasos e nervos.",
+    "printImage": "./assets/img/10.png",
+    "baseImage": "./assets/img/J.png"
+  },
+  {
+    "number": "11",
+    "name": "No Interior do Seio Maxilar",
+    "description": "Lesões que se desenvolvem no interior do seio maxilar, como o pseudocisto de retenção mucoso. Por se desenvolverem dentro de uma cavidade completamente radiolúcida, têm uma tendência a provocarem o aspecto de “inversão de imagem”, tornando a cavidade do seio maxilar radiopaca. ",
+    "printImage": "./assets/img/11.png",
+    "baseImage": "./assets/img/K.png"
+  },
+  {
+    "number": "12",
+    "name": "Em Maxila e Mandíbula (ambos os maxilares)",
+    "description": "Lesões que afetam uma ou várias regiões da maxila e da mandíbula ao mesmo tempo, possuindo a mesma origem.",
+    "printImage": "./assets/img/12.jpeg",
+    "baseImage": "./assets/img/L.jpg"
+  },
+  {
+    "number": "13",
+    "name": " Em Maxila e - ou Mandíbula e Outros Ossos Faciais-Cranianos",
+    "description": "Lesões que afetam uma ou várias regiões da maxila e/ou mandíbula, além de outros ossos faciais ou cranianos.",
+    "printImage": "./assets/img/M.png",
+    "baseImage": "./assets/img/14.png " 
+      
+         
+      
+  },
+  {
+    "number": "14",
+    "name": "Bilateral",
+    "description": "Lesões que apresentam aspecto quase que “espelhado” em ambos os lados da face, ou seja, as imagens dos lados direito e esquerdo da face são muito semelhantes em relação à posição, tamanho, densidade, padrão de loculações, entre outras características.",
+    "printImage": "./assets/img/16.jpeg",
+    "baseImage": "./assets/img/O.jpg"
+  },
+  {
+    "number": "15",
+    "name": "Radiolúcida",
+    "description": "Apresenta uma aparência escura, indicando que permite a passagem da radiação através dela, geralmente por apresentar menor densidade do que as estruturas ao redor, como osso ou outros tecidos calcificados. Representam o maior grupo de lesões e se formam pela destruição de trabéculas ósseas e/ou aumento dos espaços medulares, reabsorção do tecido ósseo, ou substituição do tecido ósseo por outro tecido com menor densidade (tecido mole ou líquido).",
+    "printImage": "./assets/img/P.png",
+    "baseImage": "./assets/img/17.png"
+  },
+  {
+    "number": "16",
+    "name": "Radiopaca",
+    "description": "Apresenta uma aparência branca ou opaca, indicando que não permite / barra a passagem da radiação através dela, geralmente por apresentar maior densidade do que as estruturas ao redor, como osso ou outros tecidos calcificados. São menos frequentes que as radiolúcidas e apresentam esse aspecto pela deposição de tecido mineralizado, aumento de espessura do tecido ósseo ou pelo aumento no número / espessamento das trabéculas ósseas e diminuição dos espaços medulares.  ",
+    "printImage": "./assets/img/19.png",
+    "baseImage": "./assets/img/S.png"
+  },
+  {
+    "number": "17",
+    "name": "Mista",
+    "description": "Uma lesão mista é geralmente uma combinação de tecidos ou substâncias que possuem diferentes densidades radiográficas. Essa mistura de características radiolúcidas e radiopacas pode ocorrer devido a várias razões, como diferentes tipos de tecidos envolvidos na lesão ou a presença de elementos calcificados no interior da lesão. Representa o menor grupo de lesões.",
+    "printImage": "./assets/img/R.png",
+    "baseImage": "./assets/img/18.png"
+  },
+  {
+    "number": "18",
+    "name": "Tecido Dentário",
+    
+    "description": "Lesões cujo conteúdo interno tem radiopacidade semelhante à densidade de esmalte e dentina. Tipicamente associada aos odontomas composto e complexo.",
+    "printImage": "./assets/img/V.png",
+    "baseImage": "./assets/img/20.png"
+  },
+  {
+    "number": "19",
+    "name": "Vidro Despolido - Casca de Laranja",
+    "description": "Lesão que apresenta radiopacidade difusa e não nítida, lembrando um vidro fosco. Adquire esse padrão no trabeculado ósseo pelo aumento das trabéculas e diminuição dos espaços medulares.",
+    "printImage": "./assets/img/U.png",
+    "baseImage": "./assets/img/21.png"
+  },
+  {
+    "number": "20",
+    "name": "Flocos de Algodão",
+    "description": " Padrão de densidade mista, em que há focos radiopacos em uma área radiolúcida, assemelhando-se a flocos de algodão.",
+    "printImage": "./assets/img/W.png",
+    "baseImage": "./assets/img/22.png" 
+  },
+  {
+    "number": "21",
+    "name": "Unilocular",
+    "description": "Lesão que possui apenas um lóculo (loja), ou seja, não há septos no interior da lesão. Pode apresentar diferentes densidades (radiolúcida, radiopaca ou mista), e ainda formato oval, circular ou festonado.",
+    "printImage": "./assets/img/Y.png",
+    "baseImage": "./assets/img/23.png"
+  },
+
+  {
+    "number": "22",
+    "name": "Multilocular",
+    "description": "Lesão que possui septos, normalmente vistos como linhas radiopacas, em seu interior, formando divisões, denominadas de lóculos (lojas), em uma mesma lesão. Septações dentro de uma lesão representam o osso que foi organizado em fios longos ou paredes dentro da lesão. A origem desse osso interno pode ser residual, osso reativo, ou, ainda, o osso pode ter sido criado dentro da lesão. O comprimento, a largura e a orientação dos septos devem ser analisados. A aparência dos septos também informa sobre a natureza da lesão. Por exemplo, septos curvos e grossos podem ser vistos em ameloblastomas, e esse padrão reflete as formações císticas histológicas dentro do ameloblastoma porque estas formações remodelam o osso residual em forma de curvas, gerando o aspecto de bolhas de sabão. Os septos também podem ser descritos com padrão 'Favos de Mel' e 'Raquete de Tênis', além do padrão 'Bolhas de Sabão'.",
+    "printImage": "./assets/img/z.png",
+    "baseImage": "./assets/img/24.png"
+  },
+  {
+    "number": "23",
+     "name": "Bolhas de Sabão",
+    "description": " Lesão multilocular com um padrão de septos que formam lóculos grandes e circulares, assemelhando-se a bolhas de sabão.",
+    "printImage": "./assets/img/25.png",
+    "baseImage": "./assets/img/26.png"
+  },
+  {
+    "number": "24",
+    "name": "Favos de Mel",
+    "description": "Lesão multilocular com um padrão de septos e lóculos pequenos e numerosos, assemelhando-se a favos de mel.",
+    "printImage": "./assets/img/28.png",
+    "baseImage": "./assets/img/27.png"
+  },
+  {
+    "number": "25",
+    "name": "Raquete de Tênis",
+    "description": "Lesão multilocular com padrão de septos se interceptam em ângulos retos, formando formas geométricas como quadrados, retângulos, triângulos e losangos.",
+    "printImage": "./assets/img/30.png",
+    "baseImage": "./assets/img/29.png"
+  },
+  {
+    "number": "26",
+    "name": " Circular",
+    "description": "Uma lesão circular ou arredondada exibe uma forma redonda ou circular, com bordas curvas e regulares. Parece muito um balão inflado. Normalmente encontrada em lesões císticas, em função da pressão causada pelo líquido cístico.",
+    "printImage": "./assets/img/32.png",
+    "baseImage": "./assets/img/31.png"
+  },
+  {
+    "number": "27",
+    "name": "Oval",
+    "description": " Uma lesão ovalada é uma anormalidade que exibe uma forma oval ou elíptica, com bordas curvas e regulares.",
+    "printImage": "./assets/img/33.png",
+    "baseImage": "./assets/img/34.png"
+  },
+  {
+    "number": "28",
+    "name": "Festonada",
+    "description": "Uma lesão festonada é uma anormalidade que exibe uma margem irregular ou serrilhada, semelhante ao contorno de arcos contíguos. Essa lesão é caracterizada por apresentar bordas não lineares e com pequenas projeções ou recessos ao longo de sua periferia, típica de lesões multiloculares.",
+    "printImage": "./assets/img/36.png",
+    "baseImage": "./assets/img/35.png"
+  },
+
+  {
+    "number": "29",
+    "name": "Circunscrita - Bem Delimitada",
+    "description": "Lesão que apresenta contornos bem definidos em sua periferia. Quando é possível identificar a zona de transição da lesão com o osso circundante de aspecto normal. Normalmente associada a lesões de crescimento lento, com comportamento benigno e pouco invasivo.  ",
+    "printImage": "./assets/img/38.png",
+    "baseImage": "./assets/img/37.png"
+  },
+  {
+    "number": "30",
+    "name": "Difusa - Mal Delimitada",
+    "description": "Lesão com contornos sem definição, com amplas margens difusas, com um padrão por vezes permeativo. Normalmente associada a doenças com crescimento rápido, mais agressivo e maligno, mas pode também representar outras lesões de crescimento rápido, como as inflamatórias.",
+    "printImage": "./assets/img/39.png",
+    "baseImage": "./assets/img/40.png"
+  },
+  {
+    "number": "31",
+    "name": "Bordo Perfurado",
+    "description": " Lesão circunscrita, normalmente tem aspecto radiolúcido, na qual é possível delimitar o contorno da lesão, mas não há linha ou faixa radiopaca a delimitando.",
+    "printImage": "./assets/img/42.png",
+    "baseImage": "./assets/img/41.png"
+  },
+  {
+    "number": "32",
+    "name": "Bordo Corticalizado",
+    "description": "Lesão circunscrita, normalmente com aspecto radiolúcido, cujos bordos de uma são delimitados por uma linha radiopaca. ",
+    "printImage": "./assets/img/44.png",
+    "baseImage": "./assets/img/43.png"
+  },
+  {
+    "number": "33",
+    "name": "Bordo Esclerótico",
+    "description": "Lesão, normalmente radiolúcida, em que o bordo é representado por uma faixa radiopaca, que pode dar a lesão tanto um aspecto circunscrito quanto difuso.",
+    "printImage": "./assets/img/46.png",
+    "baseImage": "./assets/img/45.png"
+  },
+  {
+    "number": "34",
+    "name": "Bordo Encapsulado",
+    "description": "Lesão, normalmente radiopaca, cujo bordo é representado por uma linha ou por uma faixa radiolúcida. Pode dar e lesão tanto um aspecto circunscrito, mais comum, quanto difuso.",
+    "printImage": "./assets/img/47.png",
+    "baseImage": "./assets/img/48.png"
+  },
+  {
+    "number": "35",
+    "name": "Aspecto de Roído de Traça",
+    "description": "Lesão com destruição óssea de aspecto lítico e permeativo, com pequenas e inúmeras áreas de lise óssea. Pode ser observada em associação com condições benignas mais agressivas, de crescimento rápido, e, especialmente, malignas, este tipo de bordo dá à lesão aspecto difuso.",
+    "printImage": "./assets/img/49.png",
+    "baseImage": "./assets/img/50.png"
+  },
+  {
+    "number": "36",
+    "name": "Rompimento de Tábuas (Corticais) Ósseas",
+    "description": " Lesão causa descontinuidade ou erosão de uma ou ambas as tábuas (corticais) ósseas.",
+    "printImage": "./assets/img/51.png",
+    "baseImage": "./assets/img/52.png"
+  },
+  {
+    "number": "37",
+    "name": "Abaulamento - Expansão de Tábuas (Corticais) Ósseas",
+    "description": "Lesão pode causar uma expansão externa do córtex, causando uma distorção no contorno normal do osso, mas o córtex permanecer intacto, ou seja, é possível visualizar a linha radiopaca que representa a cortical óssea.",
+    "printImage": "./assets/img/53.png",
+    "baseImage": "./assets/img/54.png"
+  },
+  {
+    "number": "38",
+    "name": "Adelgaçamento de Tábuas (Corticais) Ósseas",
+    "description": "Lesão pode causar uma expansão externa do córtex e distorção no contorno normal do osso, mas a margem cortical apresenta-se descontínua, rompida.",
+    "printImage": "./assets/img/56.jpg",
+    "baseImage": "./assets/img/55.jpg"
+  },
+  {
+    "number": "39",
+    "name": "Espessamento de Tábuas (Corticais) Ósseas",
+    "description": "Também chamado de hiperostose, a lesão que causa espessamento do periósteo deposita novas camadas compactas de osso ao córtex, aumentando o volume na região da lesão e dando a lesão aspecto radiopaco.",
+    "printImage": "./assets/img/57.jpg",
+    "baseImage": "./assets/img/58.jpg"
+  },
+  {
+    "number": "40",
+    "name": "Aspecto de Casca de Cebola",
+    "description": " A lesão causa uma reação periosteal em que o tecido ósseo deposita várias camadas concêntricas paralelas entre o periósteo e o córtex externo, formando linhas ou faixas radiopacas intercaladas com linhas ou faixas radiolúcidas. Pode ser visto em associação com doenças inflamatórias ou malignas, e representa um das reações periosteais mais comuns.",
+    "printImage": "./assets/img/59.jpg",
+    "baseImage": "./assets/img/60.jpg"
+  },
+  {
+    "number": "41",
+    "name": "Aspecto de Raios de Sol",
+    "description": "A lesão causa uma reação periosteal em que espículas ósseas irradiam da cortical, geralmente mandibular, em ângulo reto, formando aparência de raios de sol. Normalmente associada a lesões de crescimento rápido, agressivas e até malignas",
+    "printImage": "./assets/img/61.jpg",
+    "baseImage": "./assets/img/62.jpg"
+  },
+  {
+    "number": "42",
+    "name": "Deslocamento Dentário",
+    "description": "Lesões que provocam deslocamento dos dentes próximos ou adjacentes. Quando o deslocamento se dá em sentido apical, normalmente as lesões possuem origem odontogênica, pois se desenvolvem acima das coroas ou na região pericoronário. Já quando o deslocamento ocorre em sentido coronal, a lesão pode possuir um caráter agressivo ou até maligno.",
+    "printImage": "./assets/img/64.jpg",
+    "baseImage": "./assets/img/63.jpg"
+  },
+
+  
+
+  {
+    "number": "43",
+    "name": "Deslocamento Radicular",
+    "description": "Lesões que afastam as raízes dos dentes adjacentes, mas mantém as coroas em posição. Aspecto típico de lesões císticas.  ",
+    "printImage": "./assets/img/66.jpg",
+    "baseImage": "./assets/img/65.jpg"
+  },
+  {
+    "number": "44",
+    "name": " Reabsorção Radicular",
+    "description": "Lesões que causam a reabsorção das raízes de um ou vários dentes. Normalmente associadas a processos benignos com padrão de crescimento mais agressivo, como o ceratocisto odontogênico e o ameloblastoma.",
+    "printImage": "./assets/img/67.jpeg",
+    "baseImage": "./assets/img/68.jpeg"
+  },
+  {
+    "number": "45",
+    "name": " Atraso na Erupção - Retenção",
+    "description": "A lesão impede o ciclo normal de erupção dentária.",
+    "printImage": "./assets/img/69.jpg",
+    "baseImage": "./assets/img/70.jpg"
+  },
+  {
+    "number": "46",
+    "name": "Flutuação Dentária",
+    "description": "O padrão de flutuação dentária caracteriza-se pelo alargamento do espaço periodontal ao redor  da raiz e reabsorção óssea que inicia no terço apical em direção coronal das raízes, produzindo uma aparência de dentes flutuantes (sem suporte ósseo).",
+    "printImage": "./assets/img/71.jpg",
+    "baseImage": "./assets/img/72.jpg"
+  },
+  {
+    "number": "47",
+    "name": "Perda da Lâmina Dura + Aumento do Espaço do Ligamento Periodontal",
+    "description": " Lesões nas quais a lâmina dura desaparece, especialmente na região apical, e há aumento do espaço do ligamento periodontal. Normalmente associada a alterações inflamatórias de origem pulpar.",
+    "printImage": "./assets/img/74.jpeg",
+    "baseImage": "./assets/img/73.jpg"
+  },
+  {
+    "number": "48",
+    "name": "Aumento do espaço do Ligamento Periodontal Generalizado",
+    "description": " Lesões que causam o aumento (espessamento) do espaço do ligamento periodontal de vários dentes, sem necessariamente haver perda da lâmina dura. Normalmente associado a lesões malignas ou metástases tumorais.",
+    "printImage": "./assets/img/75.jpg",
+    "baseImage": "./assets/img/76.jpg"
+  },
+  {
+    "number": "49",
+    "name": " Deslocamento de Estruturas Anatômicas",
+    "description": "A Lesão deslocou o trajeto normal do canal mandibular devido a sua expansão. Porém neste caso preservou suas corticais. Normalmente lesões que deslocam a estrutura estão associadas a lesões odontogênicas, de crescimento lento e benigno, porém mais agressivo.",
+    "printImage": "./assets/img/77.bmp",
+    "baseImage": "./assets/img/78.jpg"
+  },
+  {
+    "number": "50",
+    "name": " Invasão de Estruturas Anatômicas",
+    "description": "A lesão rompeu as paredes do canal mandibular, invadindo-o. Normalmente lesões que invadem a estrutura, pelo rompimento de suas paredes corticais, estão associadas a lesões de crescimento rápido, agressivas e, muitas vezes, malignas.   ",
+    "printImage": "./assets/img/79.jpg",
+    "baseImage": "./assets/img/80.jpg"
+  },
+  {
+    "number": "51",
+    "name": "Abaulamento - Expansão de Tábuas (Corticais) Ósseas",
+    "description": "Lesão pode causar uma expansão externa do córtex, causando uma distorção no contorno normal do osso, mas o córtex permanecer intacto, ou seja, é possível visualizar a linha radiopaca que representa a cortical óssea.",
+    "printImage": "./assets/img/54.png",
+    "baseImage": "./assets/img/54.png"
+  }
+  
+
+  
+
+ 
+
+]

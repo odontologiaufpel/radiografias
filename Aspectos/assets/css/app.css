@@ -1,0 +1,986 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+main,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: top;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  background: #fffaf5;
+}
+main {
+  display: grid;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: scroll;
+}
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+a {
+  background-color: transparent;
+}
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: sticky;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+img {
+  border-style: none;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+  -webkit-appearance: button;
+}
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+progress {
+  vertical-align: baseline;
+}
+textarea {
+  overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+details {
+  display: block;
+}
+summary {
+  display: list-item;
+}
+.hide,
+[hidden],
+template {
+  display: none;
+}
+#stroke {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  background: #b3b370;
+  margin: 8px auto;
+}
+.active {
+  border-top-color: transparent !important;
+}
+@media (min-width: 800px) {
+  .active {
+    position: absolute !important;
+    top: 20px;
+    right: 20px;
+  }
+}
+.active:before {
+  margin-top: 0;
+  top: 10px;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.active:after {
+  margin-top: 0;
+  top: 2px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+button {
+  outline: none;
+}
+button:hover {
+  cursor: pointer;
+}
+html {
+  scroll-behavior: smooth;
+}
+html body {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+@media (min-width:1000px) {
+  html body {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+  }
+}
+html body #menu {
+  display: -webkit-box;
+  padding: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  align-items: center;
+  background: radial-gradient(circle at 50% 120.44%, #ffffff 0, #ffffff 12.5%, #f1fdff 25%, #cfecf9 37.5%, #acdaf1 50%, #89c7ea 62.5%, #67b5e4 75%, #46a4df 87.5%, #1f94da 100%);
+  box-shadow: 0 20px 10px -5px rgba(53, 87, 105, 0.1);
+}
+@media (min-width: 800px) {
+  html body #menu {
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+}
+html body #menu .voice-recognition {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  outline: none;
+  border: none;
+  background: none;
+}
+html body #menu .voice-recognition i {
+  font-size: 2em;
+  color: #000;
+}
+@media (min-width: 800px) {
+  html body #menu .voice-recognition {
+    margin-top: 20px;
+  }
+}
+html body #menu .ham_menu {
+  z-index: 102;
+  display: block;
+  color: #050505;
+  width: 36px;
+  height: 36px;
+  border-top: 3px solid;
+  margin: 20px 20px 0;
+  float: right;
+  position: relative;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+}
+html body #menu .ham_menu:after,
+html body #menu .ham_menu:before {
+  content: "";
+  display: block;
+  height: 3px;
+  margin-top: 6px;
+  background: currentColor;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+html body #menu .menu-text {
+  font-size: 1.25em;
+  margin-right: 20px;
+  color: #fdfafa;
+}
+@media (min-width: 800px) {
+  html body #menu .menu-text {
+    margin: 0 auto;
+  }
+}
+html body #menu .modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background: linear-gradient(150deg, #7562b8 0, #4c45a1 25%, #052889 50%, #001172 75%, #00005d 100%);
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  margin: 0;
+  overflow: auto;
+}
+html body #menu .modal .titleList {
+  font-weight: 700;
+  font-size: 1.25em;
+  color: #070707;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  margin: 100px 20px 20px;
+  z-index: 102;
+}
+@media (min-width: 800px) {
+  html body #menu .modal .titleList {
+    font-size: 2.5em;
+    margin: 40px;
+    max-width: 80%;
+  }
+}
+html body #menu .modal #stroke {
+  background: #020202;
+  margin: 20px;
+}
+@media (min-width: 800px) {
+  html body #menu .modal #stroke {
+    width: 60px;
+  }
+}
+@media (min-width: 800px) {
+  html body #menu .modal .modal-list {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 100%;
+    flex-direction: column;
+  }
+}
+html body #menu .modal .modal-list .radio-item {
+  -webkit-box-flex: 1;
+  flex: 1 1 60px;
+}
+html body #menu .modal .modal-list .radio-item a {
+  display: block;
+  color: #fffaf5;
+  font-size: 1.25em;
+  line-height: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+  background: transparent;
+  margin: 10px 0 0 20px;
+}
+html body #menu .modal .modal-list .radio-item a .number-radio {
+  margin-right: 20px;
+}
+html body #menu .modal .modal-list .radio-item a:hover {
+  color: #cef14c;
+}
+html body #general {
+  background: radial-gradient(circle at 4.55% 104.17%, #ffffff 0, #ffffff 25%, #fbfbfb 50%, #e9f0ee 75%, #d8e6e1 100%);
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  max-width: 1200px;
+}
+html body #general #fullscreen {
+  position: fixed;
+  z-index: 104;
+  min-width: 100%;
+  height: 100%;
+  background-color: #000;
+  background-image: url(../img/base-1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: 50%;
+  top: 0;
+}
+@media (min-width: 800px) {
+  html body #general #fullscreen {
+    left: 0;
+  }
+}
+html body #general #fullscreen .buttons-fullscreen {
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  align-items: center;
+}
+@media (min-width: 800px) {
+  html body #general #fullscreen .buttons-fullscreen {
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 400px) {
+  html body #general #fullscreen .buttons-fullscreen {
+    flex-wrap: wrap;
+  }
+}
+html body #general #fullscreen .buttons-fullscreen .title {
+  font-weight: 700;
+  font-size: 1.25em;
+  color: #cac9c9;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  margin: 20px;
+}
+@media (min-width: 800px) {
+  html body #general #fullscreen .buttons-fullscreen .title {
+    margin: 0 0 0 70px;
+  }
+}
+html body #general #fullscreen .buttons-fullscreen #stroke {
+  background: #f9f9fc;
+  margin: 0;
+}
+html body #general #fullscreen .buttons-fullscreen .print-areas,
+html body #general #fullscreen .buttons-fullscreen .remove-areas {
+  border: none;
+  background: none;
+  color: #ff0;
+  cursor: pointer;
+}
+html body #general #fullscreen .buttons-fullscreen .commands {
+  align-self: flex-end;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: auto;
+}
+@media (min-width: 800px) {
+  html body #general #fullscreen .buttons-fullscreen .commands {
+    width: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+  }
+}
+html body #general #fullscreen .buttons-fullscreen .commands .next,
+html body #general #fullscreen .buttons-fullscreen .commands .previous {
+  color: #f4f4f8;
+  margin: 0;
+}
+html body #general #fullscreen .buttons-fullscreen .commands .next i,
+html body #general #fullscreen .buttons-fullscreen .commands .previous i {
+  font-size: 1.25em;
+  color: #777ef9;
+}
+@media (min-width: 800px) {
+  html body #general #fullscreen .buttons-fullscreen .commands .next .next-icon,
+  html body #general #fullscreen .buttons-fullscreen .commands .next .prev-icon,
+  html
+    body
+    #general
+    #fullscreen
+    .buttons-fullscreen
+    .commands
+    .previous
+    .next-icon,
+  html
+    body
+    #general
+    #fullscreen
+    .buttons-fullscreen
+    .commands
+    .previous
+    .prev-icon {
+    -webkit-transform: none;
+    transform: none;
+    -webkit-box-ordinal-group: 1;
+    order: 0;
+    margin: 10px;
+  }
+}
+html body #general #fullscreen .buttons-fullscreen .ham_menu {
+  z-index: 102;
+  display: block;
+  color: #f7f7fa;
+  width: 36px;
+  height: 36px;
+  border-top: 3px solid;
+  margin: 20px 0 0;
+  float: right;
+  position: relative;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+  border-top-color: transparent !important;
+}
+html body #general #fullscreen .buttons-fullscreen .ham_menu:after,
+html body #general #fullscreen .buttons-fullscreen .ham_menu:before {
+  content: "";
+  display: block;
+  height: 3px;
+  margin-top: 6px;
+  background: currentColor;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+html body #general #fullscreen .buttons-fullscreen .ham_menu:before {
+  margin-top: 0;
+  top: 5px;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+html body #general #fullscreen .buttons-fullscreen .ham_menu:after {
+  margin-top: 0;
+  top: 2px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+@media (min-width: 800px) {
+  html body #general {
+    padding: 0 200px;
+  }
+}
+html body #general .number .number-text {
+  display: -webkit-inline-box;
+  display: inline-flex;
+  color: #050300;
+  font-size: 2.5em;
+  font@import url('https://fonts.googleapis.com/css?family=Lato');
+*
+  box-sizing border-box
+
+$width = 250px
+$duration = .15s
+$delayStep = .05s
+$baseDelay = 1.5 * $duration
+$borderDelay = $baseDelay + (10 * $delayStep) + $duration
+
+html
+body
+  font-family 'Lato', sans-serif
+  margin 0
+  min-height 100vh
+  padding 0
+
+  &:before
+    background linear-gradient(35deg, #9a12b3, #c5eff7)
+    bottom 0
+    content ''
+    height 100vh
+    left 0
+    position fixed
+    top 0
+    right 0
+    width 100vw
+
+svg
+  cursor pointer
+  height 44px
+  width 44px
+
+  path
+    fill #fff
+
+ol
+  list-style-type none
+
+a[href]
+  color #ffffff
+  position relative
+  text-decoration none
+
+  &:hover
+    &:after
+      transform scaleX(1)
+
+  &:after
+    content ''
+    position absolute
+    top 100%
+    height 4px
+    background #fff
+    left 0
+    right 0
+    transition transform $duration
+    transform-origin left
+    transform scaleX(0)
+
+
+.menu
+  position relative
+  width $width
+
+  &__content
+    color #ffffff
+    margin 0
+    padding 0 0 25px 0
+    position absolute
+    right 100%
+    top 0
+    width $width
+    z-index 2
+
+  &__toggle-label
+    height 44px
+    left 0
+    position absolute
+    width 44px
+
+    svg
+      left 0
+      position absolute
+      top 0
+      transition transform $duration
+      z-index 2
+
+      &:nth-of-type(2)
+        left $width
+        transform scale(0)
+
+  &__toggle
+    opacity 0
+    position fixed
+
+    &:checked ~ .menu__toggle-label
+      background rgba(0, 0, 0, 0.65)
+      height 100vh
+      left 0
+      position fixed
+      top 0
+      transition background $duration
+      width 100vw
+
+      svg:nth-of-type(1)
+        transform scale(0)
+
+      svg:nth-of-type(2)
+        left $width
+        transform scale(1)
+        transition transform $duration
+        transition-delay $borderDelay + $delayStep
+
+    &:checked ~ .menu__content
+      transform translate(100%, 0)
+
+      .menu-item
+        transform translateX(0)
+        transition transform $duration cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color $duration
+
+        $colors = #9b59b6 #86e2d5 #f5ab35 #1e8bc3 #e26a6a
+        for $item in (1..5)
+          &:nth-of-type({$item})
+
+
+            a[href]:after
+              background $colors[$item - 1]
+
+            border-color $colors[$item - 1]
+        &:nth-of-type(1)
+          transition-delay ($baseDelay), $borderDelay
+        &:nth-of-type(2)
+          transition-delay ($baseDelay + $delayStep), $borderDelay
+        &:nth-of-type(3)
+          transition-delay ($baseDelay + (2 * $delayStep)), $borderDelay
+          .menu-item
+            &:nth-of-type(1)
+              transition-delay ($baseDelay + (3 * $delayStep)), $borderDelay
+            &:nth-of-type(2)
+              transition-delay ($baseDelay + (4 * $delayStep)), $borderDelay
+            &:nth-of-type(3)
+              transition-delay ($baseDelay + (5 * $delayStep)), $borderDelay
+        &:nth-of-type(4)
+          transition-delay ($baseDelay + (6 * $delayStep)), $borderDelay
+          .menu-item
+            &:nth-of-type(1)
+              transition-delay ($baseDelay + (7 * $delayStep)), $borderDelay
+            &:nth-of-type(2)
+              transition-delay ($baseDelay + (8 * $delayStep)), $borderDelay
+            &:nth-of-type(3)
+              transition-delay ($baseDelay + (9 * $delayStep)), $borderDelay
+        &:nth-of-type(5)
+          transition-delay ($baseDelay + (10 * $delayStep)), $borderDelay
+
+$itemSize = 44px
+.menu__content > .menu-item
+  border-left 8px solid transparent
+  > a
+    line-height $itemSize
+    min-width 60px
+
+.sub-menu
+  padding 0 0 0 $itemSize
+
+.menu-item
+  line-height $itemSize
+  min-height $itemSize
+  padding 0 12px
+  transform translateX(-100%)
+
+  .menu-item
+    transform translateX(-150%)-weight: 700;
+  margin: 40px 20px 0;
+}
+
+html body #general .number {
+  width: 100%;
+}
+
+html body #general .container-image {
+  margin: 20px;
+}
+html body #general .container-image img {
+  display: block;
+  max-width: 100%;
+  max-height: 680px;
+  box-shadow: 0 10px 40px 0 rgba(53, 87, 105, 0.2);
+}
+html body #general .info {
+  width: 80%;
+}
+html body #general .info .title {
+  font-weight: 700;
+  font-size: 2em;
+  color: #f0efe3;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  margin: 20px;
+  max-width: 70%;
+}
+html body #general .info .description {
+  color: #000;
+  font-size: 1em;
+  line-height: 1.4;
+  margin: 10px 20px;
+  display: -webkit-inline-box;
+  display: inline-flex;
+}
+html body #general .commands {
+  align-self: flex-end;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (min-width: 800px) {
+  html body #general .commands {
+    width: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+}
+
+
+html body #general .commands button {
+  border: none;
+  background: none;
+}
+html body #general .commands .next,
+html body #general .commands .previous {
+  color: #000;
+  -webkit-box-align: center;
+  align-items: right;
+  padding: 15px 0;
+  display: -webkit-box;
+  display: flex;
+  margin: 20px;
+}
+@media (min-width: 800px) {
+  html body #general .commands .next,
+  html body #general .commands .previous {
+    display: -webkit-inline-box;
+    display: inline-flex;
+    margin: auto;
+  }
+}
+html body #general .commands .next .next-icon,
+html body #general .commands .next .prev-icon,
+html body #general .commands .previous .next-icon,
+html body #general .commands .previous .prev-icon {
+  font-size: 2em;
+  color: #777ef9;
+}
+@media (min-width: 800px) {
+  html body #general .commands .next .next-icon,
+  html body #general .commands .next .prev-icon,
+  html body #general .commands .previous .next-icon,
+  html body #general .commands .previous .prev-icon {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-box-ordinal-group: 0;
+    order: -1;
+    margin-right: 20px;
+  }
+}
+html body #general .commands .next .next-text,
+html body #general .commands .next .prev-text,
+html body #general .commands .previous .next-text,
+html body #general .commands .previous .prev-text {
+  font-size: 0.8em;
+  margin: 10px;
+  letter-spacing: 0.15em;
+}
+ body{
+    margin: 0;
+    padding: 0;
+    background-color: #e3ebe8;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container{
+    background: radial-gradient(circle at 4.55% 104.17%, #ffffff 0, #ffffff 25%, #fbfbfb 50%, #e9f0ee 75%, #d8e6e1 100%);;
+    height: 30px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.8s;
+    /*box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    inset -7px -7px 10px 0px rgba(0,0,0,.1),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+   text-shadow:  0px 0px 6px rgba(255,255,255,.3),
+              -4px -4px 6px rgba(116, 125, 136, .2);
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);*/
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+.search-container:hover > .search-input{
+    width: 400px;
+}
+
+.search-container .search-input{
+    background: transparent;
+    border: none;
+    outline:none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.2s;
+
+}
+
+.search-container .search-btn .fas{
+    color:#6ab7ec;
+}
+
+@keyframes hoverShake {
+  0% {transform: skew(0deg,0deg);}
+  25% {transform: skew(5deg, 5deg);}
+  75% {transform: skew(-5deg, -5deg);}
+  100% {transform: skew(0deg,0deg);}
+}
+
+.search-container:hover{
+  animation: hoverShake 0.15s linear 3;
+}
