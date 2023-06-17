@@ -925,7 +925,7 @@ html body #general .commands .previous .prev-text {
  body{
     margin: 0;
     padding: 0;
-    background-color: #e3ebe8;
+    background-color:  #ffffff;
     height: 100vh;
     display: flex;
     justify-content: center;
