@@ -269,7 +269,7 @@
     "number": "38",
     "name": "Adelgaçamento de Tábuas (Corticais) Ósseas",
     "description": "Lesão pode causar uma expansão externa do córtex e distorção no contorno normal do osso, mas a margem cortical apresenta-se descontínua, rompida.",
-    "printImage": "./assets/img/57.jpg",
+    "printImage": "./assets/img/55.jpg",
     "baseImage": "./assets/img/56.jpg"
   },
   {
@@ -344,6 +344,7 @@
     "description": " Lesões que causam o aumento (espessamento) do espaço do ligamento periodontal de vários dentes, sem necessariamente haver perda da lâmina dura. Normalmente associado a lesões malignas ou metástases tumorais.",
     "printImage": "./assets/img/76.jpg",
     "baseImage": "./assets/img/75.jpg"
+  },
   {
     "number": "49",
     "name": " Deslocamento de Estruturas Anatômicas",
