@@ -157,7 +157,7 @@
     "name": "Multilocular",
     "description": "Lesão que possui septos, normalmente vistos como linhas radiopacas, em seu interior, formando divisões, denominadas de lóculos (lojas), em uma mesma lesão. Septações dentro de uma lesão representam o osso que foi organizado em fios longos ou paredes dentro da lesão. A origem desse osso interno pode ser residual, osso reativo, ou, ainda, o osso pode ter sido criado dentro da lesão. O comprimento, a largura e a orientação dos septos devem ser analisados. A aparência dos septos também informa sobre a natureza da lesão. Por exemplo, septos curvos e grossos podem ser vistos em ameloblastomas, e esse padrão reflete as formações císticas histológicas dentro do ameloblastoma porque estas formações remodelam o osso residual em forma de curvas, gerando o aspecto de bolhas de sabão. Os septos também podem ser descritos com padrão 'Favos de Mel' e 'Raquete de Tênis', além do padrão 'Bolhas de Sabão'.",
     "printImage": "./assets/img/24.png",
-    "baseImage": "./assets/img/z.png"
+    "baseImage": "./assets/img/Z.png"
   },
   {
     "number": "23",
