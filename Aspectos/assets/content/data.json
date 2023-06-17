@@ -342,8 +342,8 @@
     "number": "48",
     "name": "Aumento do espaço do Ligamento Periodontal Generalizado",
     "description": " Lesões que causam o aumento (espessamento) do espaço do ligamento periodontal de vários dentes, sem necessariamente haver perda da lâmina dura. Normalmente associado a lesões malignas ou metástases tumorais.",
-    "printImage": "./assets/img/75.jpg",
-    "baseImage": "./assets/img/76.jpg"
+    "printImage": "./assets/img/76.jpg",
+    "baseImage": "./assets/img/75.jpg"
   },
   {
     "number": "49",
