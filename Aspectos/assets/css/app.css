@@ -933,7 +933,7 @@ html body #general .commands .previous .prev-text {
 }
 
 .search-container{
-    background: radial-gradient(circle at 4.55% 104.17%, #ffffff 0, #ffffff 25%, #fbfbfb 50%, #e9f0ee 75%, #d8e6e1 100%);;
+    background: #ffffff;
     height: 30px;
     border-radius: 30px;
     padding: 10px 20px;
@@ -982,5 +982,5 @@ html body #general .commands .previous .prev-text {
 }
 
 .search-container:hover{
-  animation: hoverShake 0.15s linear 3;
+  animation:  0.15s linear 3;
 }
