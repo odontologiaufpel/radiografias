@@ -477,13 +477,13 @@ html body #menu .modal .modal-list .radio-item a:hover {
   color: #cef14c;
 }
 html body #general {
-  background: radial-gradient(circle at 4.55% 104.17%, #ffffff 0, #ffffff 25%, #fbfbfb 50%, #e9f0ee 75%, #d8e6e1 100%);
+  background:  radial-gradient(circle, rgba(64,81,128,1) 0%, rgba(245,244,244,1) 0%, rgba(252,252,252,1) 98%);
   display: flex;
   flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   flex-direction: row;
-  max-width: 1200px;
+  max-width: 1720px;
 }
 html body #general #fullscreen {
   position: fixed;
@@ -808,7 +808,7 @@ $itemSize = 44px
     line-height $itemSize
     min-width 60px
 
-.sub-menu
+.sub-menu/*Submenu aqui */
   padding 0 0 0 $itemSize
 
 .menu-item
@@ -925,7 +925,7 @@ html body #general .commands .previous .prev-text {
  body{
     margin: 0;
     padding: 0;
-    background-color:  #ffffff;
+    background-color: #ffffff;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -933,7 +933,7 @@ html body #general .commands .previous .prev-text {
 }
 
 .search-container{
-    background: #ffffff;
+    background:  radial-gradient(circle, rgba(64,81,128,1) 0%, rgba(245,244,244,1) 0%, rgba(252,252,252,1) 98%);
     height: 30px;
     border-radius: 30px;
     padding: 10px 20px;
@@ -949,7 +949,7 @@ html body #general .commands .previous .prev-text {
    text-shadow:  0px 0px 6px rgba(255,255,255,.3),
               -4px -4px 6px rgba(116, 125, 136, .2);
   text-shadow: 2px 2px 3px rgba(255,255,255,0.5);*/
-  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+  box-shadow:  4px 4px 6px 0 hsla(0, 14%, 99%, 0.3),
               -4px -4px 6px 0 rgba(116, 125, 136, .2), 
     inset -4px -4px 6px 0 rgba(255,255,255,.2),
     inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
