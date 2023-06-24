@@ -315,8 +315,8 @@
     "number": "43",
     "name": "Aspecto de Roído de Traça",
     "description": " Lesão com destruição óssea de aspecto lítico e permeativo, com pequenas e inúmeras áreas de lise óssea. Pode ser observada em associação com condições benignas mais agressivas, de crescimento rápido, e, especialmente, malignas, este tipo de bordo dá à lesão aspecto difuso.",
-    "printImage": "./assets/img/50.png",
-    "baseImage": "./assets/img/49.png"
+    "printImage": "./assets/img/49.png",
+    "baseImage": "./assets/img/50.png"
   },
 
   {
