@@ -1,6 +1,6 @@
 [
   {
-    "number": "1",
+    "number": "01",
     "name": "Localização",
     "description": "Com relação à localização, classificamos as lesões como localizadas ou generalizadas. Localizadas são aquelas lesões se desenvolvem em um único local de um dos ossos maxilares, enquanto as generalizadas são aquelas que podem estar presente em mais de uma região dos ossos maxilares, em uma ou múltiplas regiões de ambos os maxilares ou, ainda, nos ossos maxilares e outros ossos faciais/cranianos. É importante esse reconhecimento porque, geralmente, as generalizadas estão mais relacionadas com síndromes, alterações sistêmicas, metabólicas ou até mesmo metástases tumorais, o que já inicia o direcionamento para uma hipótese diagnóstica.    ",
     "baseImage": "./assets/img/81.png",
@@ -8,56 +8,56 @@
     
   },
   {
-  "number": "2",
+  "number": "02",
   "name": "Localizada na Maxila",
   "description": "Lesão única localizada em uma região específica da maxila, como a região anterior, a região posterior ou a região de tuberosidade, por exemplo. Importante reconhecer, pois há lesões com predileção por determinado osso e mesmo por determinado local daquele osso, e, também, para sugerir a possível origem ou tipo de tecido que compõe a lesão. ",
   "baseImage": "./assets/img/A.jpg",
   "printImage": "./assets/img/1.jpg"
 },
   {
-    "number": "3",
+    "number": "03",
     "name": "Localizada em Mandíbula",
     "description": "Lesão única localizada em uma região específica da mandíbula, como a região de sínfise, corpo, ramo ascendente, ângulo ou côndilo mandibular. Importante reconhecer, pois há lesões com predileção por determinado osso e mesmo por determinado local daquele osso, e para sugerir a possível origem ou tipo de tecido que compõe a lesão.",
     "printImage": "./assets/img/2.jpg",
     "baseImage": "./assets/img/B.jpeg"
   },
   {
-    "number": "4",
+    "number": "04",
     "name": "Em Região Periapical",
     "description": " Lesão localizada ao redor do ápice de um dente. Normalmente, mas não exclusivamente, é uma lesão associada a processos de origem inflamatória pulpar.",
     "printImage": "./assets/img/3.jpeg",
     "baseImage": "./assets/img/C.jpeg"
   },
   { 
-    "number": "5",
+    "number": "05",
     "name": "Pericoronária",
     "description": "Lesão que se localiza ao redor da coroa de um dente não erupcionado. Normalmente possui origem odontogênica, por apresentar proximidade com tecido dentário.",
     "printImage": "./assets/img/4.jpeg",
     "baseImage": "./assets/img/D.jpg"
   },
   { 
-    "number": "6",
+    "number": "06",
     "name": " Entre as Raízes Dentárias",
     "description": " Lesão que se localiza entre as raízes de dois dentes, muitas vezes causando o deslocamento / afastamento destas raízes. O exemplo mais típico é o do cisto periodontal lateral.",
     "printImage": "./assets/img/E.jpg",
     "baseImage": "./assets/img/5.jpg"
   },
   {
-    "number": "7",
+    "number": "07",
     "name": "Localizada na Linha Média ",
     "description": " Lesão localizada na região de incisivos, especialmente entre os incisivos centrais superiores, na linha média facial. Pode estar associada a estruturas anatômicas presentes nesta região específica, como o cisto do ducto nasopalatino.",
     "printImage": "./assets/img/6.png",
     "baseImage": "./assets/img/F.png"
   },
   {
-    "number": "8",
+    "number": "08",
     "name": "Ultrapassando a Linha Média",
     "description": "Lesões que que se localizam em região anterior de face, iniciando em um dos hemi-arcos dentários e se estendendo até o outro hemi-arco, por ultrapassar a região da linha média (superior ou inferior). Algumas lesões possuem essa característica, como o granuloma central de células gigantes, enquanto outras caracteristicamente se limitam a um hemiarco. ",
     "printImage": "./assets/img/G.png",
     "baseImage": "./assets/img/7.png"
   },
   { 
-    "number": "9",
+    "number": "09",
     "name": "Acima do Canal Mandibular",
     "description": "Lesão vista acima do limite superior (teto) do canal mandibular. Normalmente essas lesões possuem origem odontogênica, por se formarem próximas aos tecidos dentários.",
     "printImage": "./assets/img/H.png",
