@@ -372,7 +372,7 @@
     "number": "51",
     "name": "Aspecto de Raios de Sol",
     "description": "A lesão causa uma reação periosteal em que espículas ósseas irradiam da cortical, geralmente mandibular, em ângulo reto, formando aparência de raios de sol. Normalmente associada a lesões de crescimento rápido, agressivas e até malignas",
-    "printImage": "./assets/img/61.png",
+    "printImage": "./assets/img/.png",
     "baseImage": "./assets/img/62.png"
   },
 
