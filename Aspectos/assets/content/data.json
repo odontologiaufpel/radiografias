@@ -315,16 +315,16 @@
     "number": "43",
     "name": "Aspecto de Roído de Traça",
     "description": " Lesão com destruição óssea de aspecto lítico e permeativo, com pequenas e inúmeras áreas de lise óssea. Pode ser observada em associação com condições benignas mais agressivas, de crescimento rápido, e, especialmente, malignas, este tipo de bordo dá à lesão aspecto difuso.",
-    "printImage": "./assets/img/49.png",
-    "baseImage": "./assets/img/50.png"
+    "printImage": "./assets/img/50.png",
+    "baseImage": "./assets/img/49.png"
   },
 
   {
     "number": "44",
     "name": "Aspecto de Roído de Traça",
     "description": " As corticais ósseas podem ser afetadas por uma lesão de diferentes formas, desde sua preservação até seu rompimento. Ainda, lesões podem causar reações no periósteo, especialmente a formação de novo osso subperiosteal, em diferentes padrões. Essas reações periosteais, que são mais comuns na mandíbula que na maxila, podem ser vistas em radiografias panorâmicas e, especialmente, radiografias oclusais totais ou parciais lateralizadas.",
-    "printImage": "./assets/img/91.png",
-    "baseImage": "./assets/img/92.png"
+    "printImage": "./assets/img/92.png",
+    "baseImage": "./assets/img/91.png"
   },
   {
     "number": "45",
