@@ -82,30 +82,30 @@
     "number": "12",
     "name": "Em Maxila ou Mandíbula (mais de um local do mesmo osso) ",
     "description": "Lesão que afeta várias regiões da maxila ou da mandíbula, possuindo a mesma origem. ",
-    "printImage": "./assets/img/01L. Localização - Generalizada - Em Maxila ou Mandíbula (mais de um local no mesmo osso)_1.png",
-    "baseImage": "./assets/img/01L. Localização - Generalizada - Em Maxila ou Mandíbula (mais de um local no mesmo osso)_.png"
+    "printImage": "./assets/img/877.png",
+    "baseImage": "./assets/img/878.png"
   }, 
   {
     "number": "13",
     "name": "Em Maxila e Mandíbula (ambos os maxilares) ",
     "description": "Lesão que afeta várias regiões da maxila ou da mandíbula, possuindo a mesma origem. ",
-    "printImage": "./assets/img/84.png",
-    "baseImage": "./assets/img/83.png"
+    "printImage": "./assets/img/83.png",
+    "baseImage": "./assets/img/84.png"
   }, 
   {
    
     "number": "14",
     "name": "No Interior do Seio Maxilar",
     "description": "Lesões que se desenvolvem no interior do seio maxilar, como o pseudocisto de retenção mucoso. Por se desenvolverem dentro de uma cavidade completamente radiolúcida, têm uma tendência a provocarem o aspecto de “inversão de imagem”, tornando a cavidade do seio maxilar radiopaca. ",
-    "printImage": "./assets/img/k.ONG",
+    "printImage": "./assets/img/k.png",
     "baseImage": "./assets/img/11.png"
   },
   {   
     "number": "15",
     "name": "Em Maxila e Mandíbula (ambos os maxilares)",
     "description": "Lesões que afetam uma ou várias regiões da maxila e da mandíbula ao mesmo tempo, possuindo a mesma origem.",
-    "printImage": "./assets/img/L.JPG",
-    "baseImage": "./assets/img/12.JPEG"
+    "printImage": "./assets/img/L.jpg",
+    "baseImage": "./assets/img/12.jpeg"
   },
   { 
     "number": "16",
@@ -206,7 +206,7 @@
     "number": "28",
     "name": "Unilocular",
     "description": "Lesão que possui apenas um lóculo (loja), ou seja, não há septos no interior da lesão. Pode apresentar diferentes densidades (radiolúcida, radiopaca ou mista) e, ainda, formato oval, circular ou festonado. ",
-    "printImage": "./assets/img/23png",
+    "printImage": "./assets/img/23.png",
     "baseImage": "./assets/img/Y.png"
   },
 
@@ -344,8 +344,8 @@
     "number": "47",
     "name": "Abaulamento - Expansão de Tábuas (Corticais) Ósseas",
     "description": "Lesão pode causar uma expansão externa do córtex, causando uma distorção no contorno normal do osso, mas o córtex permanecer intacto, ou seja, é possível visualizar a linha radiopaca que representa a cortical óssea.",
-    "printImage": "./assets/img/54.png",
-    "baseImage": "./assets/img/55.png"
+    "printImage": "./assets/img/132.png",
+    "baseImage": "./assets/img/131.png"
   },
   {
     "number": "48",
