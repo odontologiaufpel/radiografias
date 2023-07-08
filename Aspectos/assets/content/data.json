@@ -89,8 +89,8 @@
     "number": "13",
     "name": "Em Maxila e Mandíbula (ambos os maxilares) ",
     "description": "Lesão que afeta várias regiões da maxila ou da mandíbula, possuindo a mesma origem. ",
-    "printImage": "./assets/img/84.png",
-    "baseImage": "./assets/img/83.png"
+    "printImage": "./assets/img/83.png",
+    "baseImage": "./assets/img/84.png"
   }, 
   {
    
