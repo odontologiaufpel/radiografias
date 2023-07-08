@@ -97,7 +97,7 @@
     "number": "14",
     "name": "No Interior do Seio Maxilar",
     "description": "Lesões que se desenvolvem no interior do seio maxilar, como o pseudocisto de retenção mucoso. Por se desenvolverem dentro de uma cavidade completamente radiolúcida, têm uma tendência a provocarem o aspecto de “inversão de imagem”, tornando a cavidade do seio maxilar radiopaca. ",
-    "printImage": "./assets/img/K.png",
+    "printImage": "./assets/img/k.png",
     "baseImage": "./assets/img/11.png"
   },
   {   
