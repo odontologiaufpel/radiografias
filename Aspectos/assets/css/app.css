@@ -932,55 +932,31 @@ html body #general .commands .previous .prev-text {
     align-items: center;
 }
 
-.search-container{
-    background:  radial-gradient(circle, rgba(64,81,128,1) 0%, rgba(245,244,244,1) 0%, rgba(252,252,252,1) 98%);
-    height: 30px;
-    border-radius: 30px;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: 0.8s;
-    /*box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-    inset -7px -7px 10px 0px rgba(0,0,0,.1),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-   text-shadow:  0px 0px 6px rgba(255,255,255,.3),
-              -4px -4px 6px rgba(116, 125, 136, .2);
-  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);*/
-  box-shadow:  4px 4px 6px 0 hsla(0, 14%, 99%, 0.3),
-              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.2),
-    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+.description{
+  font-size: 30px;
+  color: #0c0c0c;
+  text-align: justify;
+
+  background-color: radial-gradient(circle, rgba(64,81,128,1) 0%, rgba(245,244,244,1) 0%, rgba(252,252,252,1) 98%);
+border:2px outset rgb(8, 8, 8); 
+padding: 10px; 
+text-align:justify;
+
+
+content: 'key tip';
+bottom:50%;
+font-size: 1em;
+line-height: 1em;
+
+border-width: 6px;
+  border-style: groove;
+
+
+transform-origin: bottom left;
+color: #fff;
+font-family: sans-serif;
+
+text-transform: none;
+z-index:1;
 }
 
-.search-container:hover > .search-input{
-    width: 400px;
-}
-
-.search-container .search-input{
-    background: transparent;
-    border: none;
-    outline:none;
-    width: 0px;
-    font-weight: 500;
-    font-size: 16px;
-    transition: 0.2s;
-
-}
-
-.search-container .search-btn .fas{
-    color:#6ab7ec;
-}
-
-@keyframes hoverShake {
-  0% {transform: skew(0deg,0deg);}
-  25% {transform: skew(5deg, 5deg);}
-  75% {transform: skew(-5deg, -5deg);}
-  100% {transform: skew(0deg,0deg);}
-}
-
-.search-container:hover{
-  animation:  0.15s linear 3;
-}
