@@ -157,6 +157,24 @@ async function renderItem6({
     console.log("Error!", e);
   }
 }
+
+async function renderItem7({
+  number: e,
+  name: n,
+  description: t,
+  baseImage: a,
+  printImage: r
+}) {
+  try {
+    $(".title").text(n),
+      $(".number-text").text(n),
+      $(".container-image img").attr("src", a),
+      $(".description").text(t),
+      $("#fullscreen").css("backgroundImage", `url(${a})`);
+  } catch (e) {
+    console.log("Error!", e);
+  }
+}
 // até aqui foi feita a substituição 
 
 // Lógica para renderizar os itens da lista 1 no HTML modal-list daté modal-list6
@@ -205,12 +223,19 @@ async function renderList(e) {
       
     async function renderList6(e) {
       e.map(({ number: e, name: n }) => {
-        $(".modal-list5").append(
+        $(".modal-list6").append(
           `<li class="radio-item">\n    <a href="#"> <span class="number-radio">${e} - </span>${n}</a>\n  </li>`
         );
       });
         }
- 
+       
+        async function renderList7(e) {
+          e.map(({ number: e, name: n }) => {
+            $(".modal-list7").append(
+              `<li class="radio-item">\n    <a href="#"> <span class="number-radio">${e} - </span>${n}</a>\n  </li>`
+            );
+          });
+            }
 
 
       
@@ -249,6 +274,7 @@ $(document).ready(async () => {
   const e5 = await getJson5();
 
   const e6 = await getJson6();
+  const e7 = await getJson2();
   
 
 
@@ -260,6 +286,7 @@ $(document).ready(async () => {
     let n4 = e4[0];
     let n5= e5[0];
     let n6= e6[0];
+    let n7 = e7[0];
     
 
   if (
@@ -270,7 +297,10 @@ $(document).ready(async () => {
     await renderList3(e3),
     await renderList4(e4),
     await renderList5(e5),
+
+  
     await renderList6(e6),
+    await renderList7(e7),
 
     $(".next").click(async () => {
 
@@ -367,6 +397,7 @@ $(document).ready(async () => {
         $(".modal").toggle(),
         $(".ham_menu").toggleClass("active");
     }),
+    
     $(".modal-list6").on("click", "a", async t => {
       let a = $(t.currentTarget)
         .children()
@@ -378,7 +409,18 @@ $(document).ready(async () => {
         $(".modal").toggle(),
         $(".ham_menu").toggleClass("active");
     }),
-    
+
+    $(".modal-list7").on("click", "a", async t => {
+      let a = $(t.currentTarget)
+        .children()
+        .text()
+        .split(" - ");
+      (a = a[0] - 1),
+        (n = e7[a]),
+        await renderItem(n),
+        $(".modal").toggle(),
+        $(".ham_menu").toggleClass("active");
+    }),
 
     (window.SpeechRecognition =
       window.SpeechRecognition || window.webkitSpeechRecognition || null),
