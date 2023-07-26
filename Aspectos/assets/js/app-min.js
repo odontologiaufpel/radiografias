@@ -264,7 +264,6 @@ $(document).ready(async () => {
 
   if (
     (await renderItem(n),
-    
 
     await renderList(e),
     await renderList2(e2),
@@ -313,8 +312,6 @@ $(document).ready(async () => {
         $(".remove-areas").hide(),
         $(".print-areas").show();
     }),
-
-
     $(".modal-list").on("click", "a", async t => {
       let a = $(t.currentTarget)
         .children()
