@@ -967,7 +967,7 @@ border-width: 6px;
 
 transform-origin: bottom left;
 color: #fff;
-font-family: sans-serif;
+font-family: font-family: $raleway;;
 
 text-transform: none;
 z-index:1;
@@ -988,7 +988,7 @@ z-index:1;
     position: static;
     color: rgb(247, 247, 248);
     font-weight: bold;
-   
+    font-family:raleway;
   
  
 }
@@ -997,18 +997,18 @@ z-index:1;
 .menu-texto{
 
 
-  font-size: 20px;
+  font-size:22px;
   
   text-align: justify;
-  font-family: "Lato", sans-serif;
+  font-family:raleway;
 
 
  
 }
 
 body {
-  font-family: "Lato", sans-serif;
-  background: #fdfdfc;
+  font-family: raleway;
+  background: radial-gradient(circle, rgba(247,242,242,1) 26%, rgba(130,156,218,1) 88%);
 }
 
 #main {
@@ -1135,4 +1135,177 @@ body {
   padding: 0;
   text-align: center;
   line-height: 1.65;
+}
+
+ul.modal-list7 {
+  list-style: circle;
+  padding: 0;
+}
+
+/* Estilo para os itens da lista */
+ul.modal-list7 li {
+  margin-bottom: px;
+  text-align: justify;
+  font-family:raleway;
+}
+
+/* Estilo para os links dentro dos itens da lista */
+ul.modal-list7 li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 21px;
+  display: block;
+  padding: 5px;
+  border: 1px solid #9baff0;
+  border-radius: 50% 20% / 10% 40%;
+  transition: background-color 0.3s ease;
+}
+/* Estilo para modal-list */
+ul.modal-list {
+  list-style:circle;
+  padding: 0;
+}
+
+ul.modal-list li {
+  margin-bottom: 10px;
+}
+
+ul.modal-list li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 21px;
+  display: block;
+  padding: 5px;
+  border: 1px solid #9baff0;
+  border-radius: 50% 20% / 10% 40%;
+  transition: background-color 0.3s ease;
+}
+
+ul.modal-list li a:hover {
+  background-color: #f5f5f5;
+}
+
+/* Estilo para modal-list2 */
+ul.modal-list2 {
+  list-style: circle;
+  padding: 0;
+}
+
+ul.modal-list2 li {
+  margin-bottom: 10px;
+}
+
+ul.modal-list2 li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 21px;
+  display: block;
+  padding: 5px;
+  border: 1px solid #9baff0;
+  border-radius: 50% 20% / 10% 40%;
+  transition: background-color 0.3s ease;
+}
+
+ul.modal-list2 li a:hover {
+  background-color: #f0f5ff;
+}
+
+/* Estilo para modal-list3 */
+ul.modal-list3 {
+  list-style:circle;
+  padding: 0;
+}
+
+ul.modal-list3 li {
+  margin-bottom: 15px;
+}
+
+ul.modal-list3 li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 21px;
+  display: block;
+  padding: 5px;
+  border: 1px solid #9baff0;
+  border-radius: 50% 20% / 10% 40%;
+  transition: background-color 0.3s ease;
+}
+
+ul.modal-list3 li a:hover {
+  background-color: #f5f5f5;
+}
+
+/* Estilo para modal-list4 */
+ul.modal-list4 {
+  list-style: circle;
+  padding: 0;
+}
+
+ul.modal-list4 li {
+  margin-bottom: 12px;
+}
+
+ul.modal-list4 li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 21px;
+  display: block;
+  padding: 5px;
+  border: 1px solid #9baff0;
+  border-radius: 50% 20% / 10% 40%;
+  transition: background-color 0.3s ease;
+}
+
+ul.modal-list4 li a:hover {
+  background-color: #f5f5f5;
+}
+
+/* Estilo para modal-list5 */
+ul.modal-list5 {
+  list-style: circle;
+  padding: 0;
+}
+
+ul.modal-list5 li {
+  margin-bottom: 8px;
+}
+
+ul.modal-list5 li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 21px;
+  display: block;
+  padding: 5px;
+  border: 1px solid #9baff0;
+  border-radius: 50% 20% / 10% 40%;
+  transition: background-color 0.3s ease;
+}
+
+ul.modal-list5 li a:hover {
+  background-color: #f5f5f5;
+}
+
+/* Estilo para modal-list6 */
+ul.modal-list6 {
+  list-style: circle;
+  padding: 0;
+}
+
+ul.modal-list6 li {
+  margin-bottom: 6px;
+}
+
+ul.modal-list6 li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 21px;
+  display: block;
+  padding: 5px;
+  border: 1px solid #9baff0;
+  border-radius: 50% 20% / 10% 40%;
+  transition: background-color 0.3s ease;
+}
+
+ul.modal-list6 li a:hover {
+  background-color: #f5f5f5;
 }

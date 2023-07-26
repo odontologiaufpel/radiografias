@@ -1,4 +1,12 @@
-// Remova a função getJson() do arquivo main.js, pois ela já foi definida anteriormente.
+async function getJson() {
+  try {
+    const response = await fetch('assets/content/data.json');
+    const json = await response.json();
+    return json;
+  } catch (e) {
+    console.log('Error!', e);
+  }
+}
 
 async function renderItem({
   number,
@@ -8,8 +16,9 @@ async function renderItem({
   printImage
 }) {
   try {
-    $('.title').text(name);
-    $('.number-text').text(name); // Modificamos o valor do elemento .number-text para exibir o nome em vez do número.
+    $('.title').text(name); //   $('.number-text').text(number);
+
+    $('.number-text').text(name);
     $('.container-image img').attr('src', baseImage);
     $('.description').text(description);
     $('#fullscreen').css('backgroundImage', `url(${baseImage})`);
@@ -23,340 +32,59 @@ async function renderList(arr) {
     number,
     name
   }) => {
-    $('.submenu').append(`<li class="radio-item">
+    $('.modal-list').append(`<li class="radio-item">
     <a href="#"> <span class="number-radio">${number} - </span>${name}</a>
   </li>`);
   });
 }
 
 $(document).ready(async () => {
-  // Verifica se os dados foram carregados corretamente antes de prosseguir
-  if (!dataRadio) {
-    console.log('Data not loaded!'); // Exibe uma mensagem de erro no console caso os dados não tenham sido carregados corretamente
-    return;
-  }
-
-  let actualRadio = dataRadio[0]; // initializing the first area on home
-
-  await renderItem(actualRadio);
-  await renderList(dataRadio);
-
-  // next button action
-  $('.next').click(async () => {
-    actualRadio = dataRadio[actualRadio.number % dataRadio.length];
-    await renderItem(actualRadio);
-    $('.remove-areas').hide();
-    $('.print-areas').show();
-  });
-
-  // previous button action
-  $('.previous').click(async () => {
-    actualRadio.number - 2 < 0 ? actualRadio = dataRadio[(dataRadio.length - 1) % dataRadio.length] : actualRadio = dataRadio[(actualRadio.number - 2) % dataRadio.length];
-    await renderItem(actualRadio);
-    $('.remove-areas').hide();
-    $('.print-areas').show();
-  });
-
-  // opening modal
-  $('header .ham_menu').click(() => {
-    $('.modal').toggle();
-    $('.ham_menu').toggleClass('active');
-  });
-
-  // closing fullscreen
-  $('#fullscreen .ham_menu').click(() => {
-    $('#fullscreen').fadeOut();
-    $('body').css('position', 'static');
-  });
-
-  // showing fullscreen
-  $('.container-image').click(() => {
-    $('#fullscreen').fadeIn();
-    $('body').css('position', 'fixed');
-  });
-
-  // print image
-  $('.print-areas').click(() => {
-    $('#fullscreen').css('background-image', `url(${actualRadio.printImage})`);
-    $('.print-areas').hide();
-    $('.remove-areas').show();
-  });
-
-  // remove areas
-  $('.remove-areas').click(() => {
-    $('#fullscreen').css('background-image', `url(${actualRadio.baseImage})`);
-    $('.remove-areas').hide();
-    $('.print-areas').show();
-  });
-
-  $('.dropdown-container').on('click', 'a', async e => {
-    let number = $(e.currentTarget).children().text().split(' - ');
-    number = number[0] - 1;
-    actualRadio = dataRadio[number];
-    await renderItem(actualRadio);
-    $('.modal').toggle();
-    $('.ham_menu').toggleClass('active');
-  });
-
-
-
-  function openNav() {
-    document.getElementById("mySidenav").style.left = "0";
-    document.body.classList.add('overlay');
-  }
-
-  function closeNav() {
-    document.getElementById("mySidenav").style.left = "-450px";
-    document.body.classList.remove('overlay');
-  }
-
-  var dropdown = document.getElementsByClassName("dropdown-btn");
-  var i;
-
-  for (i = 0; i < dropdown.length; i++) {
-    dropdown[i].addEventListener("click", function() {
-      this.classList.toggle("fa-minus");
-      var dropdownContent = this.nextElementSibling;
-      if (dropdownContent.style.display === "block") {
-        dropdownContent.style.display = "none";
-      } else {
-        dropdownContent.style.display = "block";
-      }
-    });
-  }
-});
-
-
-  function openNav() {
-    document.getElementById("mySidenav").style.left = "0";
-    // document.getElementById("main").style.marginLeft = "250px";
-    document.body.classList.add('overlay');
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.left = "-450px";
-    // document.getElementById("main").style.marginLeft = "0";
-    document.body.classList.remove('overlay');
-}
-
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-    dropdown[i].addEventListener("click", function() {
-        this.classList.toggle("fa-minus");
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-            dropdownContent.style.display = "none";
-        } else {
-            dropdownContent.style.display = "block";
-        }
-    });
-}
-
-});
-
-async function getJson() {
-  try {
-    const response = await fetch('assets/content/data.json');
-    const json = await response.json();
-    return json;
-  } catch (e) {
-    console.log('Error!', e);
-  }
-}
-
-async function renderItem({
-  number,
-  name,
-  description,
-  baseImage,
-  printImage
-}) {
-  try {
-    $('.title').text(name);
-    $('.number-text').text(name);
-    $('.container-image img').attr('src', baseImage);
-    $('.description').text(description);
-    $('#fullscreen').css('backgroundImage', `url(${baseImage})`);
-  } catch (e) {
-    console.log('Error!', e);
-  }
-}
-
-async function renderList(arr) {
-  arr.map(({
-    number,
-    name
-  }) => {
-    $('.modal-list').append(`<li class="radio-item">
-      <a href="#" data-number="${number}">${name}</a>
-    </li>`);
-  });
-}
-
-$(document).ready(async () => {
   const dataRadio = await getJson();
   let actualRadio = dataRadio[0]; // initializing the first area on home
 
   await renderItem(actualRadio);
-  await renderList(dataRadio);
+  await renderList(dataRadio); // next button action
 
-  // next button action
   $('.next').click(async () => {
     actualRadio = dataRadio[actualRadio.number % dataRadio.length];
     await renderItem(actualRadio);
     $('.remove-areas').hide();
     $('.print-areas').show();
-  });
+  }); // previous button action
 
-  // previous button action
   $('.previous').click(async () => {
     actualRadio.number - 2 < 0 ? actualRadio = dataRadio[(dataRadio.length - 1) % dataRadio.length] : actualRadio = dataRadio[(actualRadio.number - 2) % dataRadio.length];
     await renderItem(actualRadio);
     $('.remove-areas').hide();
     $('.print-areas').show();
-  });
+  }); // opening modal
 
-  // opening modal
   $('header .ham_menu').click(() => {
     $('.modal').toggle();
     $('.ham_menu').toggleClass('active');
-  });
+  }); // closing fullscreen
 
-  // closing fullscreen
   $('#fullscreen .ham_menu').click(() => {
     $('#fullscreen').fadeOut();
     $('body').css('position', 'static');
-  });
+  }); // showing fullscreen
 
-  // showing fullscreen
   $('.container-image').click(() => {
     $('#fullscreen').fadeIn();
     $('body').css('position', 'fixed');
-  });
+  }); // print image
 
-  // print image
   $('.print-areas').click(() => {
     $('#fullscreen').css('background-image', `url(${actualRadio.printImage})`);
     $('.print-areas').hide();
     $('.remove-areas').show();
-  });
+  }); // remove areas
 
-  // remove areas
   $('.remove-areas').click(() => {
     $('#fullscreen').css('background-image', `url(${actualRadio.baseImage})`);
     $('.remove-areas').hide();
     $('.print-areas').show();
   });
-
-  $('.modal-list').on('click', 'a', async e => {
-    const number = $(e.currentTarget).data('number');
-    const selectedRadio = dataRadio.find(radio => radio.number === number);
-    if (selectedRadio) {
-      actualRadio = selectedRadio;
-      await renderItem(actualRadio);
-    }
-    $('.modal').toggle();
-    $('.ham_menu').toggleClass('active');
-  });
-});
- 
-<script>
-async function getJson() {
-  try {
-    const response = await fetch('assets/content/data.json');
-    const json = await response.json();
-    return json;
-  } catch (e) {
-    console.log('Error!', e);
-  }
-}
-
-async function renderItem({
-  number,
-  name,
-  description,
-  baseImage,
-  printImage
-}) {
-  try {
-    $('.title').text(name);
-    $('.number-text').text(name);
-    $('.container-image img').attr('src', baseImage);
-    $('.description').text(description);
-    $('#fullscreen').css('backgroundImage', `url(${baseImage})`);
-  } catch (e) {
-    console.log('Error!', e);
-  }
-}
-
-async function renderList(arr) {
-  arr.map(({
-    number,
-    name
-  }) => {
-    $('.modal-list').append(`<li class="radio-item">
-      <a href="#"> <span class="number-radio">${number} - </span>${name}</a>
-    </li>`);
-  });
-}
-
-$(document).ready(async () => {
-  const dataRadio = await getJson();
-  let actualRadio = dataRadio[0]; // initializing the first area on home
-
-  await renderItem(actualRadio);
-  await renderList(dataRadio);
-
-  // next button action
-  $('.next').click(async () => {
-    actualRadio = dataRadio[actualRadio.number % dataRadio.length];
-    await renderItem(actualRadio);
-    $('.remove-areas').hide();
-    $('.print-areas').show();
-  });
-
-  // previous button action
-  $('.previous').click(async () => {
-    actualRadio.number - 2 < 0 ? actualRadio = dataRadio[(dataRadio.length - 1) % dataRadio.length] : actualRadio = dataRadio[(actualRadio.number - 2) % dataRadio.length];
-    await renderItem(actualRadio);
-    $('.remove-areas').hide();
-    $('.print-areas').show();
-  });
-
-  // opening modal
-  $('header .ham_menu').click(() => {
-    $('.modal').toggle();
-    $('.ham_menu').toggleClass('active');
-  });
-
-  // closing fullscreen
-  $('#fullscreen .ham_menu').click(() => {
-    $('#fullscreen').fadeOut();
-    $('body').css('position', 'static');
-  });
-
-  // showing fullscreen
-  $('.container-image').click(() => {
-    $('#fullscreen').fadeIn();
-    $('body').css('position', 'fixed');
-  });
-
-  // print image
-  $('.print-areas').click(() => {
-    $('#fullscreen').css('background-image', `url(${actualRadio.printImage})`);
-    $('.print-areas').hide();
-    $('.remove-areas').show();
-  });
-
-  // remove areas
-  $('.remove-areas').click(() => {
-    $('#fullscreen').css('background-image', `url(${actualRadio.baseImage})`);
-    $('.remove-areas').hide();
-    $('.print-areas').show();
-  });
-
   $('.modal-list').on('click', 'a', async e => {
     let number = $(e.currentTarget).children().text().split(' - ');
     number = number[0] - 1;
@@ -364,12 +92,10 @@ $(document).ready(async () => {
     await renderItem(actualRadio);
     $('.modal').toggle();
     $('.ham_menu').toggleClass('active');
-  });
+  }); // voice recognition
 
-  // voice recognition
-  window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition || null;
+  window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition || null; // caso não suporte esta API DE VOZ
 
-  // caso não suporte esta API DE VOZ
   if (window.SpeechRecognition === null) {
     $('.voice-recognition').hide();
   } else {
@@ -409,30 +135,4 @@ $(document).ready(async () => {
       }
     });
   }
-
-  function openNav() {
-    document.getElementById("mySidenav").style.left = "0";
-    document.body.classList.add('overlay');
-  }
-
-  function closeNav() {
-    document.getElementById("mySidenav").style.left = "-450px";
-    document.body.classList.remove('overlay');
-  }
-
-  var dropdown = document.getElementsByClassName("dropdown-btn");
-  var i;
-
-  for (i = 0; i < dropdown.length; i++) {
-    dropdown[i].addEventListener("click", function() {
-      this.classList.toggle("fa-minus");
-      var dropdownContent = this.nextElementSibling;
-      if (dropdownContent.style.display === "block") {
-        dropdownContent.style.display = "none";
-      } else {
-        dropdownContent.style.display = "block";
-      }
-    });
-  }
 });
-</script>
