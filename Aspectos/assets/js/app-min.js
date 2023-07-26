@@ -241,6 +241,7 @@ async function renderList(e) {
 
 
 $(document).ready(async () => {
+
   const e = await getJson();
   const e2 = await getJson2();
   const e3 = await getJson3();
@@ -263,6 +264,8 @@ $(document).ready(async () => {
 
   if (
     (await renderItem(n),
+    
+
     await renderList(e),
     await renderList2(e2),
     await renderList3(e3),
@@ -310,6 +313,8 @@ $(document).ready(async () => {
         $(".remove-areas").hide(),
         $(".print-areas").show();
     }),
+
+
     $(".modal-list").on("click", "a", async t => {
       let a = $(t.currentTarget)
         .children()
