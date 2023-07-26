@@ -185,7 +185,16 @@ sup {
   top: -0.5em;
 }
 img {
+
+
+ 
+ 	 /* posiciona a 70px para baixo */
   border-style: none;
+  transition: 500ms linear;
+
+  transition-property: font-size;
+  transition-duration: 4s;
+  transition-delay: 2s;
 }
 button,
 input,
@@ -277,7 +286,7 @@ template {
   display: inline-block;
   width: 40px;
   height: 3px;
-  background: #b3b370;
+  background: #fdfdfc;
   margin: 8px auto;
 }
 .active {
@@ -419,7 +428,7 @@ html body #menu .modal {
   left: 0;
   margin: 0;
   overflow: auto;
-}
+}/*hambuger aqui*/
 html body #menu .modal .titleList {
   font-weight: 700;
   font-size: 1.25em;
@@ -477,7 +486,7 @@ html body #menu .modal .modal-list .radio-item a:hover {
   color: #cef14c;
 }
 html body #general {
-  background:  radial-gradient(circle, rgba(64,81,128,1) 0%, rgba(245,244,244,1) 0%, rgba(252,252,252,1) 98%);
+  background: radial-gradient(circle, rgba(64,81,128,1) 0%, rgba(245,244,244,1) 0%, rgba(252,252,252,1) 98%);;
   display: flex;
   flex-wrap: wrap;
   -webkit-box-orient: horizontal;
@@ -485,6 +494,8 @@ html body #general {
   flex-direction: row;
   max-width: 1720px;
 }
+
+
 html body #general #fullscreen {
   position: fixed;
   z-index: 104;
@@ -524,7 +535,7 @@ html body #general #fullscreen .buttons-fullscreen {
 html body #general #fullscreen .buttons-fullscreen .title {
   font-weight: 700;
   font-size: 1.25em;
-  color: #cac9c9;
+  color: #818bec;
   display: -webkit-inline-box;
   display: inline-flex;
   margin: 20px;
@@ -563,7 +574,7 @@ html body #general #fullscreen .buttons-fullscreen .commands {
 }
 html body #general #fullscreen .buttons-fullscreen .commands .next,
 html body #general #fullscreen .buttons-fullscreen .commands .previous {
-  color: #f4f4f8;
+  color: #ffff;
   margin: 0;
 }
 html body #general #fullscreen .buttons-fullscreen .commands .next i,
@@ -600,7 +611,7 @@ html body #general #fullscreen .buttons-fullscreen .commands .previous i {
 html body #general #fullscreen .buttons-fullscreen .ham_menu {
   z-index: 102;
   display: block;
-  color: #f7f7fa;
+  color: #5c5cf1;
   width: 36px;
   height: 36px;
   border-top: 3px solid;
@@ -819,7 +830,7 @@ $itemSize = 44px
 
   .menu-item
     transform translateX(-150%)-weight: 700;
-  margin: 40px 20px 0;
+     margin40px 20px 0;
 }
 
 html body #general .number {
@@ -833,7 +844,7 @@ html body #general .container-image img {
   display: block;
   max-width: 100%;
   max-height: 680px;
-  box-shadow: 0 10px 40px 0 rgba(53, 87, 105, 0.2);
+  box-shadow: 0 10px 40px 0 rgba(235, 238, 240, 0.2);
 }
 html body #general .info {
   width: 80%;
@@ -841,11 +852,22 @@ html body #general .info {
 html body #general .info .title {
   font-weight: 700;
   font-size: 2em;
-  color: #f0efe3;
-  display: -webkit-inline-box;
+  color: #f7f6f4;
+  display: -webkit-flex;
   display: inline-flex;
   margin: 20px;
   max-width: 70%;
+  content: "";
+  display: block;
+  height: 3px;
+  margin-top: 6px;
+  background: currentColor;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+
 }
 html body #general .info .description {
   color: #000;
@@ -899,8 +921,9 @@ html body #general .commands .next .next-icon,
 html body #general .commands .next .prev-icon,
 html body #general .commands .previous .next-icon,
 html body #general .commands .previous .prev-icon {
+  font-weight: bold;
   font-size: 2em;
-  color: #777ef9;
+  color:rgba(64,81,128,1);
 }
 @media (min-width: 800px) {
   html body #general .commands .next .next-icon,
@@ -922,16 +945,6 @@ html body #general .commands .previous .prev-text {
   margin: 10px;
   letter-spacing: 0.15em;
 }
- body{
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .description{
   font-size: 30px;
   color: #0c0c0c;
@@ -960,3 +973,166 @@ text-transform: none;
 z-index:1;
 }
 
+.menu-text{
+
+ 
+
+
+    font-size: 1.05em;
+    margin-right: 15px;
+    position:-webkit-sticky;
+    left: -70px;
+    
+    margin-top: 60px; /* altura que está do topo */
+    top: 0px; /* altura que vai parar antes do topo */
+    position: static;
+    color: rgb(247, 247, 248);
+    font-weight: bold;
+   
+  
+ 
+}
+
+
+.menu-texto{
+
+
+  font-size: 20px;
+  
+  text-align: justify;
+  font-family: "Lato", sans-serif;
+
+
+ 
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background: #fdfdfc;
+}
+
+#main {
+  transition: margin-left .5s;
+
+  padding: 15px;
+  font-size:  50px;
+  text-align: center;
+  transition: margin-left .5s;
+
+  content: "";
+  display: block;
+  height: 50px;
+  background-color: #850e0e00;
+
+
+
+  /* deixando o elemento na posição desejada */
+ 
+}
+
+.sidenav {
+  padding: 35px 20px 35px 30px;
+  height: 100%;
+  width: 330px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -500px;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidenav .closebtn {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000;
+  transition: 0.3s;
+}
+.sidenav .closebtn {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color:rgba(64,81,128,1);
+  transition: 0.3s;
+}
+
+.sidenav .closebtn:hover {
+  color: rgba(64,81,128,1);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 60px;
+  margin-left: 50px;
+}
+
+.submenu{
+  margin-top: 30px;
+  border-top: 1px solid rgba(64,81,128,1);
+}
+
+.submenu,
+.dropdown-container{
+  list-style-type: circle;
+  padding: 0;
+}
+
+.submenu > li{
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(64,81,128,1);
+}
+
+.submenu a, .dropdown-btn {
+  padding: 6px 8px 6px 0;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #000;
+  display: inline-block;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.submenu a:hover, .dropdown-btn:hover {
+  color: rgba(64,81,128,1);;
+}
+
+.submenu .active {
+  background-color: none;}
+
+.dropdown-container {
+  display: none;
+  background-color:none;
+  padding-left: 8px;
+}
+
+.submenu .dropdown-container li a{
+  text-transform: none;
+  display: block;
+  padding-left: 15px;
+}
+
+.submenu .dropdown-container li a:hover,
+.submenu .dropdown-container li a.active{
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+.submenu .fa-plus,
+.submenu .fa-minus {
+  width: 36px;
+  height: 36px;
+  background-color: rgba(64,81,128,1);
+  float: right;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+  line-height: 1.65;
+}

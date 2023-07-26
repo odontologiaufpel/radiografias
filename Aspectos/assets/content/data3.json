@@ -1,0 +1,70 @@
+[
+
+    { 
+        "number": "1",
+        "name": "Forma",
+        "description": "Uma lesão pode ter uma forma específica ou ser irregular. Pode ser circular, o que sugere que ela seja cheia de fluido, também chamado formato hidráulico. Pode ser também festonada, com arcos contíguos. A forma pode refletir o mecanismo do seu crescimento, Contudo, a principal classificação das lesões em relação à forma refere-se a lesões uniloculares ou multiloculares. Normalmente as lesões multiloculares estão associadas a condições benignas, porém localmente agressivas, que expandem corticais / tábuas ósseas e possuem maior taxa de recorrência. ",
+        "printImage": "./assets/img/88.png",
+        "baseImage": "./assets/img/87.png" 
+      },
+        
+        { 
+          "number": "2",
+          "name": "Unilocular",
+          "description": "Lesão que possui apenas um lóculo (loja), ou seja, não há septos no interior da lesão. Pode apresentar diferentes densidades (radiolúcida, radiopaca ou mista) e, ainda, formato oval, circular ou festonado. ",
+          "printImage": "./assets/img/23.png",
+          "baseImage": "./assets/img/Y.png"
+        },
+      
+        {
+          "number": "3",
+          "name": "Multilocular",
+          "description": "Lesão que possui septos em seu interior, normalmente vistos como linhas radiopacas, que formam divisões na lesão denominadas de lóculos (lojas). Septações representam o osso que foi organizado em fios longos ou paredes no interior da lesão, sendo que a origem desse osso interno pode ser residual, reativo, ou, ainda, originário da própria lesão. O comprimento, a largura e a orientação dos septos devem ser analisados, pois podem informar sobre a natureza da lesão. Por exemplo, septos curvos e grossos podem ser vistos em ameloblastomas, e esse padrão reflete as formações císticas deste tipo de lesão, que tem a característica de remodelar o osso residual (em forma de curvas), gerando o aspecto de bolhas de sabão. Os septos também podem ser descritos com padrão 'Favos de Mel'' e ''Raquete de Tênis'' ",
+          "printImage": "./assets/img/24.png",
+          "baseImage": "./assets/img/Z.png"
+        },
+        {
+          "number": "4",
+           "name": "Bolhas de Sabão",
+          "description": " Lesão multilocular com um padrão de septos que formam lóculos grandes e circulares, assemelhando-se a bolhas de sabão.",
+          "printImage": "./assets/img/26.png",
+          "baseImage": "./assets/img/25.png"
+        },
+        {
+          "number": "5",
+          "name": "Favos de Mel",
+          "description": "Lesão multilocular com um padrão de septos e lóculos pequenos e numerosos, assemelhando-se a favos de mel.",
+          "printImage": "./assets/img/27.png",
+          "baseImage": "./assets/img/28.png"
+        },
+        {
+          "number": "6",
+          "name": "Raquete de Tênis",
+          "description": "Lesão multilocular com padrão de septos que se interceptam em ângulos retos, resultando em formas geométricas como quadrados, retângulos, triângulos e losangos.",
+          "printImage": "./assets/img/29.png",
+          "baseImage": "./assets/img/30.png"
+        },
+        {
+          "number": "7",
+          "name": " Circular",
+          "description": "Uma lesão circular ou arredondada exibe uma forma redonda ou circular, com bordas curvas e regulares. Parece muito um balão inflado. Normalmente encontrada em lesões císticas, em função da pressão causada pelo líquido cístico.",
+          "printImage": "./assets/img/31.png",
+          "baseImage": "./assets/img/32.png"
+        },
+        {
+          "number": "8",
+          "name": "Oval",
+          "description": " Uma lesão ovalada é uma anormalidade que exibe uma forma oval ou elíptica, com bordas curvas e regulares.",
+          "printImage": "./assets/img/34.png",
+          "baseImage": "./assets/img/33.png"
+        },
+        {
+          "number": "9",
+          "name": "Festonada",
+          "description": "Uma lesão festonada é uma anormalidade que exibe uma margem irregular ou serrilhada, semelhante ao contorno de arcos contíguos. Essa lesão é caracterizada por apresentar bordas não lineares e com pequenas projeções ou recessos ao longo de sua periferia, típica de lesões multiloculares.",
+          "printImage": "./assets/img/35.png",
+          "baseImage": "./assets/img/36.png"
+        }
+
+
+]
