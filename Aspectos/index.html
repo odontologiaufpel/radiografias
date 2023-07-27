@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
       <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/app.css">
   <!-- Inclua o script para carregar o arquivo JSON -->
-  <script src="assets/content/data.json" id="data-script"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  
  <script src="assets/js/main.js"></script>
 
 </head>
@@ -24,7 +26,7 @@
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/app.css" />
+ 
 
     <title>Odonto Ufpel - Radiografias </title>
   </head>
@@ -34,6 +36,7 @@
   <body>
     <div id="mySidenav" class="sidenav">
       <span class="menu-texto">Aspecto Radiográfico de Lesões</span>
+
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <ul class="submenu">
         
@@ -94,6 +97,7 @@
 
             
 
+
  
             </ul>
          
@@ -103,6 +107,7 @@
               <ul class="modal-list6"></ul>
 
              
+
 
 
    
@@ -115,9 +120,7 @@
               <ul class="modal-list7"></ul>
 
                
-            
-
-             
+       
             </ul>
            
             
@@ -125,10 +128,11 @@
     </div>
   
     <div id="main">
-        <span style="font-size:60px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         <h1> </h1>
         <p></p>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/main.js"></script>
 
 
@@ -184,7 +188,7 @@
         <h1 class="number-text">SEIO MAXILAR</h1>
       </div>
       <a class="container-image" href="#">
-        <img src="./assets/img/base-1.jpg" alt="" />
+        <img src="" alt="" />
       </a>
       <div class="info">
         <p class="description">
@@ -218,9 +222,8 @@ CUIDADO: quando se observa mais do que uma imagem no exame só poderemos chamar 
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"
   ></script>
-  <link rel="stylesheet" href="style.css" />
-
-   <script src="assets/js/app-min.js"></script>
+  
+ 
 
   <script src="assets/js/app-min.js"></script>
 
@@ -228,7 +231,108 @@ CUIDADO: quando se observa mais do que uma imagem no exame só poderemos chamar 
  
   <body>
     <script>
-    
+      async function getJson() {
+        try {
+          const response = await fetch('assets/content/data.json');
+          const json = await response.json();
+          return json;
+        } catch (e) {
+          console.log('Error!', e);
+        }
+      }
+      
+      async function renderItem({
+        number,
+        name,
+        description,
+        baseImage,
+        printImage
+      }) {
+        try {
+          $('.title').text(name);
+          $('.number-text').text(name);
+          $('.container-image img').attr('src', baseImage);
+          $('.description').text(description);
+          $('#fullscreen').css('backgroundImage', `url(${baseImage})`);
+        } catch (e) {
+          console.log('Error!', e);
+        }
+      }
+      
+      async function renderList(arr) {
+        arr.map(({
+          number,
+          name
+        }) => {
+          $('.modal-list').append(`<li class="radio-item">
+            <a href="#"> <span class="number-radio">${number} - </span>${name}</a>
+          </li>`);
+        });
+      }
+      
+      $(document).ready(async () => {
+        const dataRadio = await getJson();
+        let actualRadio = dataRadio[0]; // initializing the first area on home
+      
+        await renderItem(actualRadio);
+        await renderList(dataRadio);
+      
+        // next button action
+        $('.next').click(async () => {
+          actualRadio = dataRadio[actualRadio.number % dataRadio.length];
+          await renderItem(actualRadio);
+          $('.remove-areas').hide();
+          $('.print-areas').show();
+        });
+      
+        // previous button action
+        $('.previous').click(async () => {
+          actualRadio.number - 2 < 0 ? actualRadio = dataRadio[(dataRadio.length - 1) % dataRadio.length] : actualRadio = dataRadio[(actualRadio.number - 2) % dataRadio.length];
+          await renderItem(actualRadio);
+          $('.remove-areas').hide();
+          $('.print-areas').show();
+        });
+      
+        // opening modal
+        $('header .ham_menu').click(() => {
+          $('.modal').toggle();
+          $('.ham_menu').toggleClass('active');
+        });
+      
+        // closing fullscreen
+        $('#fullscreen .ham_menu').click(() => {
+          $('#fullscreen').fadeOut();
+          $('body').css('position', 'static');
+        });
+      
+        // showing fullscreen
+        $('.container-image').click(() => {
+          $('#fullscreen').fadeIn();
+          $('body').css('position', 'fixed');
+        });
+      
+        // print image
+        $('.print-areas').click(() => {
+          $('#fullscreen').css('background-image', `url(${actualRadio.printImage})`);
+          $('.print-areas').hide();
+          $('.remove-areas').show();
+        });
+      
+        // remove areas
+        $('.remove-areas').click(() => {
+          $('#fullscreen').css('background-image', `url(${actualRadio.baseImage})`);
+          $('.remove-areas').hide();
+          $('.print-areas').show();
+        });
+      
+        $('.modal-list').on('click', 'a', async e => {
+          let number = $(e.currentTarget).children().text().split(' - ');
+          number = number[0] - 1;
+          actualRadio = dataRadio[number];
+          await renderItem(actualRadio);
+          $('.modal').toggle();
+          $('.ham_menu').toggleClass('active');
+        });
       
         // voice recognition
         window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition || null;
@@ -298,11 +402,129 @@ CUIDADO: quando se observa mais do que uma imagem no exame só poderemos chamar 
             }
           });
         }
-    
+      });
 
 
- 
+      async function getJson() {
+  try {
+    const response = await fetch('assets/content/data.json');
+    const json = await response.json();
+    return json;
+  } catch (e) {
+    console.log('Error!', e);
+  }
+}
 
+// Função para renderizar o item
+async function renderItem({ number, name, description, baseImage, printImage }) {
+  try {
+    $('.title').text(name);
+    $('.number-text').text(name);
+    $('.container-image img').attr('src', baseImage);
+    $('.description').text(description);
+    $('#fullscreen').css('backgroundImage', `url(${baseImage})`);
+  } catch (e) {
+    console.log('Error!', e);
+  }
+}
+
+// Função para carregar os dados e renderizar o primeiro item
+async function loadAndRenderData() {
+  const dataRadio = await getJson();
+  let actualRadio = dataRadio[0]; // initializing the first area on home
+
+  await renderItem(actualRadio);
+
+  // Função para renderizar o item ao clicar no link
+  $('.dropdown-container a').click(async (event) => {
+    event.preventDefault();
+    const number = parseInt($(event.target).text().split(' ')[0], 10);
+    actualRadio = dataRadio.find((radio) => radio.number === number);
+    await renderItem(actualRadio);
+    $('.modal').toggle();
+    $('.ham_menu').toggleClass('active');
+  });
+}
+
+$(document).ready(async () => {
+  // Carregar dados e renderizar o primeiro item
+  await loadAndRenderData();
+
+  // Restante do código
+  // ...
+});
+
+
+
+// O JSON com os dados das lesões
+const lesaoData = [
+  // ... os dados do JSON que você forneceu ...
+];
+
+// Função para criar a interface do dropdown
+function createDropdown() {
+  const dropdownContainer = document.querySelector('.dropdown-container');
+
+  // Loop pelos dados do JSON
+  lesaoData.forEach(lesao => {
+    const dropdownItem = document.createElement('div');
+    dropdownItem.innerHTML = `
+      <h3>${lesao.name}</h3>
+      <p>${lesao.description}</p>
+      <img src="${lesao.baseImage}" alt="${lesao.name}">
+      <img src="${lesao.printImage}" alt="${lesao.name} (Imagem de diagnóstico)">
+    `;
+
+    dropdownContainer.appendChild(dropdownItem);
+  });
+}
+
+// Chame a função para criar o dropdown quando a página estiver carregada
+document.addEventListener('DOMContentLoaded', createDropdown);
+
+
+// Função para carregar e renderizar os dados
+async function loadAndRenderData() {
+  try {
+    // Supondo que você já tenha o JSON armazenado em uma variável chamada 'lesaoData'
+    const lesaoData = [
+      // ... os dados do JSON que você forneceu ...
+    ];
+
+    // Renderizar o primeiro item do dropdown
+    renderLesaoInfo(lesaoData[0]);
+
+    // Criar o evento de clique para os itens do dropdown
+    const dropdownItems = document.querySelectorAll('.dropdown-item');
+    dropdownItems.forEach((item, index) => {
+      item.addEventListener('click', () => {
+        renderLesaoInfo(lesaoData[index]);
+      });
+    });
+  } catch (error) {
+    console.error('Erro ao carregar e renderizar os dados:', error);
+  }
+}
+
+// Função para renderizar as informações da lesão selecionada
+function renderLesaoInfo(lesao) {
+  const infoContainer = document.querySelector('.lesao-info');
+  infoContainer.innerHTML = `
+    <h3>${lesao.name}</h3>
+    <p>${lesao.description}</p>
+    <img src="${lesao.baseImage}" alt="${lesao.name}">
+    <img src="${lesao.printImage}" alt="${lesao.name} (Imagem de diagnóstico)">
+  `;
+}
+
+// Chame a função para criar o dropdown quando a página estiver carregada
+$(document).ready(async () => {
+  // Carregar dados e renderizar o primeiro item
+  await loadAndRenderData();
+
+  // Restante do código (se houver)...
+  // ...
+});
 
       </script>
  

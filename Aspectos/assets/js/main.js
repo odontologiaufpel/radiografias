@@ -216,45 +216,4 @@ $(document).ready(async () => {
   // ...
 });
 
-// Evento de clique no link "Localização"
-document.getElementById("opcao-localizacao").addEventListener("click", function (event) {
-  event.preventDefault(); // Impede que o link recarregue a página (caso ele tenha um "#" no href)
 
-  // Aqui você fará a requisição para obter o JSON e, em seguida, exibir a imagem no elemento img
-  fetch('assets/content/data.json') // Substitua "data.json" pelo caminho correto para o arquivo JSON
-    .then(response => response.json())
-    .then(data => {
-      // Aqui você pode manipular os dados do JSON conforme necessário
-      const imagemLocalizacao = document.getElementById('imagem-localizacao');
-      imagemLocalizacao.src = data.baseImage; // Define a imagem do JSON como src do elemento img
-    })
-    .catch(error => console.error('Erro ao obter dados do JSON:', error));
-});
-$(document).ready(async () => {
-  const e = await getJson();
-
-  // Ajustando a renderização inicial do menu
-  await renderList(e);
-  $(".submenu li:first-child a").addClass("active");
-  const initialData = e.find(item => item.number === "1");
-  await renderItem(initialData);
-
-  // Evento de clique nos itens do submenu
-  $(".submenu li a").click(async function () {
-    const number = $(this).data("number");
-    const data = e.find(item => item.number === number);
-
-    $(".submenu li a").removeClass("active");
-    $(this).addClass("active");
-
-    await renderItem(data);
-  });
-
-  // Evento de clique para exibir/ocultar o submenu
-  $(".dropdown-btn").click(function () {
-    $(this).toggleClass("fa-plus fa-minus");
-    $(this).siblings(".dropdown-container").toggle();
-  });
-
-  // Outros eventos específicos do seu menu podem ser adicionados aqui
-});

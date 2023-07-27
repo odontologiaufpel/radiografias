@@ -158,7 +158,7 @@ async function renderItem6({
   }
 }
 
-async function renderItem7({
+async function renderItem6({
   number: e,
   name: n,
   description: t,
@@ -417,7 +417,7 @@ $(document).ready(async () => {
         .split(" - ");
       (a = a[0] - 1),
         (n = e7[a]),
-        await renderItem6(n),
+        await renderItem(n),
         $(".modal").toggle(),
         $(".ham_menu").toggleClass("active");
     }),
