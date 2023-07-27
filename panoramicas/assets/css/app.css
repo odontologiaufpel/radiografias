@@ -43,7 +43,7 @@ ul.modal-list li a {
   display: block;
   padding: 5px;
   border: 1px solid #fff;;
-  border-radius: 50% 20% / 10% 40%;
+  border-radius: 27px;
   transition: background-color 0.3s ease;
 }
 
