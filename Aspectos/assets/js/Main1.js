@@ -1,3 +1,17 @@
+$(document).ready(async () => {
+  // Verifica se os dados foram carregados corretamente antes de prosseguir
+  if (!dataRadio) {
+    console.log('Data not loaded!'); // Exibe uma mensagem de erro no console caso os dados não tenham sido carregados corretamente
+    return;
+  }
+
+  let actualRadio = dataRadio[0]; // Inicializa actualRadio com o primeiro item do array dataRadio
+
+  // Restante do código para renderizar os elementos e adicionar eventos, conforme necessário
+  // ...
+});
+
+
 function openNav() {
     document.getElementById("mySidenav").style.left = "0";
     // document.getElementById("main").style.marginLeft = "250px";

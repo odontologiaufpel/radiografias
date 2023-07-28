@@ -6,17 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
       <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/app.css">
   <!-- Inclua o script para carregar o arquivo JSON -->
-  <script src="assets/content/data.json" id="data-script"></script>
-  <script src="assets/content/data1.json" id="data-script"></script>
-  <script src="assets/content/data2.json" id="data-script"></script>
-  <script src="assets/content/data3.json" id="data-script"></script>
-  <script src="assets/content/data4.json" id="data-script"></script>
-  <script src="assets/content/data5.json" id="data-script"></script>
-  <script src="assets/content/data6.json" id="data-script"></script>
-  <script src="assets/content/data7.json" id="data-script"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  
+ <script src="assets/js/main.js"></script>
  
+ <script src="assets/content/data.json" id="data-script"></script>
+ <script src="assets/content/data1.json" id="data-script"></script>
+ <script src="assets/content/data2.json" id="data-script"></script>
+ <script src="assets/content/data3.json" id="data-script"></script>
+ <script src="assets/content/data4.json" id="data-script"></script>
+ <script src="assets/content/data5.json" id="data-script"></script>
+ <script src="assets/content/data6.json" id="data-script"></script>
+ <script src="assets/content/data7.json" id="data-script"></script>
+
 
 </head>
 
@@ -31,41 +36,49 @@
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/app.css" />
 
     <title>Odonto Ufpel - Radiografias </title>
   </head>
 
+ 
 
   <body>
     <div id="mySidenav" class="sidenav">
       <span class="menu-texto">Aspecto Radiográfico de Lesões</span>
+
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <ul class="submenu">
         
         <li><a href="#">Localização</a>
           
 
-          
-         
+           
 
           
             
             <i class="fa fa-plus dropdown-btn"></i>
           
             <ul class="dropdowna-container">
-
+              
               <ul class="modal-list"></ul>
+              
+              
               
               
 
 
         </ul>
+
+
           </li>
+
           <li><a href="# "> Densidade Relativa </a>
             <i class="fa fa-plus dropdown-btn"></i>
             <ul class="dropdown-container">
-              
+
+              <ul class="modal-list2"></ul>
+
+
               <li><a href="#"> Radiolúcida</a></li>
               <li><a href="#"> Radiopaca</a></li>
               <li><a href="#">Mista</a></li>
@@ -78,9 +91,12 @@
          <li><a href="#"> Forma </a>
             <i class="fa fa-plus dropdown-btn"></i>
             <ul class="dropdown-container">
+            
 
 
-              <ul class="modal-list"></ul>
+              <ul class="modal-list3"></ul>
+
+
               <li><a href="#">Unilocular</a></li>
               <li><a href="#">Multilocular</a></li>
               <li><a href="#"> Bolhas de Sabão</a></li>
@@ -90,349 +106,83 @@
               <li><a href="#">Oval</a></li>
               <li><a href="#">Festonada</a></li> 
             </ul>
-            <li><a href="#">  Delimitação / Contorno </a>
-              <i class="fa fa-plus dropdown-btn"></i>
-              <ul class="dropdown-container">
-                <ul class="modal-list4"></ul>
-  
-  
-                <li><a href="#">Circunscrita / Bem Delimitada</a></li>
-                <li><a href="#"> Difusa / Mal Delimitada</a></li>
-                <li><a href="#">Bordo  Perfurado</a></li>
-                <li><a href="#">Bordo  Corticalizado</a></li>
-                <li><a href="#">Bordo  Esclerótico</a></li>
-                <li><a href="#">Bordo  Encapsulado</a></li>
-                <li><a href="#">Roído de Traça </a></li>
-              </ul>
-            </li> 
-         <li><a href="#">  Efeito em Corticais Ósseas </a>
-              <i class="fa fa-plus dropdown-btn"></i>
-              <ul class="dropdown-container">
-                <ul class="modal-list5"></ul>
-  
-              
-  
-                <li><a href="#"> Abaulamento (Expansão) de Tábuas (Corticais) Ósseas</a></li>
-                <li><a href="#">Adelgaçamento de Tábuas (Corticais) Ósseas</a></li>
-                <li><a href="#">Espessamento de Tábuas (Corticais) Ósseas</a></li>
-                <li><a href="#">Aspecto de Casca de Cebola</a></li>
-                  <li><a href="#">Aspecto de Raios de Sol</a></li>
-  
-   
-              </ul>
-           
-                 <li><a href="#">  Efeito em Dentes  </a>
-              <i class="fa fa-plus dropdown-btn"></i>
-              <ul class="dropdown-container">
-                <ul class="modal-list6"></ul>
-  
-               
-                <li><a href="#">Deslocamento Dentário</a></li>
-                <li><a href="#">Deslocamento Radicular</a></li>
-                <li><a href="#">Reabsorção Radicular</a></li>
-                <li><a href="#">Atraso na Erupção / Retenção</a></li>
-                  <li><a href="#">Perda da Lâmina Dura + Aumento do Espaço do Ligamento Periodontal</a></li>
-  
-  
-  
-     
-              </ul>
-              <li><a href="#">  Efeito em Estuturas Anatômica </a>
-                <i class="fa fa-plus dropdown-btn"></i>
-                <ul class="dropdown-container">
-                
-                       
-                <ul class="modal-list7"></ul>
-  
-                 
-              
-  
-                <li><a href="#"> Efeito em Estruturas Anatômicas</a></li>
-                <li><a href="#">Aumento do Espaço do Ligamento Periodontal Generalizado</a></li>
-                <li><a href="#">Invasão de Estruturas Anatômicas</a></li>
-         
-              </ul>
-             
-              
+       <li><a href="#">  Delimitação / Contorno </a>
+            <i class="fa fa-plus dropdown-btn"></i>
+            <ul class="dropdown-container">
+              <ul class="modal-list4"></ul>
+
+
+              <li><a href="#">Circunscrita / Bem Delimitada</a></li>
+              <li><a href="#"> Difusa / Mal Delimitada</a></li>
+              <li><a href="#">Bordo  Perfurado</a></li>
+              <li><a href="#">Bordo  Corticalizado</a></li>
+              <li><a href="#">Bordo  Esclerótico</a></li>
+              <li><a href="#">Bordo  Encapsulado</a></li>
+              <li><a href="#">Roído de Traça </a></li>
+            </ul>
+          </li> 
+       <li><a href="#">  Efeito em Corticais Ósseas </a>
+            <i class="fa fa-plus dropdown-btn"></i>
+            <ul class="dropdown-container">
+              <ul class="modal-list5"></ul>
+
             
-      </div>
+
+              <li><a href="#"> Abaulamento (Expansão) de Tábuas (Corticais) Ósseas</a></li>
+              <li><a href="#">Adelgaçamento de Tábuas (Corticais) Ósseas</a></li>
+              <li><a href="#">Espessamento de Tábuas (Corticais) Ósseas</a></li>
+              <li><a href="#">Aspecto de Casca de Cebola</a></li>
+                <li><a href="#">Aspecto de Raios de Sol</a></li>
+
+ 
+            </ul>
+         
+               <li><a href="#">  Efeito em Dentes  </a>
+            <i class="fa fa-plus dropdown-btn"></i>
+            <ul class="dropdown-container">
+              <ul class="modal-list6"></ul>
+
+             
+              <li><a href="#">Deslocamento Dentário</a></li>
+              <li><a href="#">Deslocamento Radicular</a></li>
+              <li><a href="#">Reabsorção Radicular</a></li>
+              <li><a href="#">Atraso na Erupção / Retenção</a></li>
+                <li><a href="#">Perda da Lâmina Dura + Aumento do Espaço do Ligamento Periodontal</a></li>
+
+
+
+   
+            </ul>
+            <li><a href="#">  Efeito em Estuturas Anatômica </a>
+              <i class="fa fa-plus dropdown-btn"></i>
+              <ul class="dropdown-container">
+              
+                     
+              <ul class="modal-list7"></ul>
+
+               
+            
+
+              <li><a href="#"> Efeito em Estruturas Anatômicas</a></li>
+              <li><a href="#">Aumento do Espaço do Ligamento Periodontal Generalizado</a></li>
+              <li><a href="#">Invasão de Estruturas Anatômicas</a></li>
+       
+            </ul>
+           
+            
+          
+    </div>
   
     <div id="main">
-        <span style="font-size:60px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         <h1> </h1>
         <p></p>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-    <script src="js/require.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/jquery-3.2.1.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+ 
 
     <script>
-
-function openNav() {
-    document.getElementById("mySidenav").style.left = "0";
-    // document.getElementById("main").style.marginLeft = "250px";
-    document.body.classList.add('overlay');
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.left = "-450px";
-    // document.getElementById("main").style.marginLeft = "0";
-    document.body.classList.remove('overlay');
-}
-
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-    dropdown[i].addEventListener("click", function() {
-        this.classList.toggle("fa-minus");
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-            dropdownContent.style.display = "none";
-        } else {
-            dropdownContent.style.display = "block";
-        }
-    });
-}
-
-async function getJson() {
-  try {
-    const response = await fetch('assets/content/data1.json');
-    const json = await response.json();
-    return json;
-  } catch (e) {
-    console.log('Error!', e);
-  }
-}
-
-async function renderItem({
-  number,
-  name,
-  description,
-  baseImage,
-  printImage
-}) {
-  try {
-    $('.title').text(name);
-    $('.number-text').text(name);
-    $('.container-image img').attr('src', baseImage);
-    $('.description').text(description);
-    $('#fullscreen').css('backgroundImage', `url(${baseImage})`);
-  } catch (e) {
-    console.log('Error!', e);
-  }
-}
-
-async function renderList(arr) {
-  arr.map(({
-    number,
-    name
-  }) => {
-    $('.mySidenav').append(`<li class="radio-item">
-      <a href="#"> <span class="number-radio">${number} - </span>${name}</a>
-    </li>`);
-  });
-}
-
-$(document).ready(async () => {
-  const dataRadio = await getJson();
-  let actualRadio = dataRadio[0]; // initializing the first area on home
-
-  await renderItem(actualRadio);
-  await renderList(dataRadio);
-
-  // next button action
-  $('.next').click(async () => {
-    actualRadio = dataRadio[actualRadio.number % dataRadio.length];
-    await renderItem(actualRadio);
-    $('.remove-areas').hide();
-    $('.print-areas').show();
-  });
-
-  // previous button action
-  $('.previous').click(async () => {
-    actualRadio.number - 2 < 0 ? actualRadio = dataRadio[(dataRadio.length - 1) % dataRadio.length] : actualRadio = dataRadio[(actualRadio.number - 2) % dataRadio.length];
-    await renderItem(actualRadio);
-    $('.remove-areas').hide();
-    $('.print-areas').show();
-  });
-
-  // opening modal
-  $('header .ham_menu').click(() => {
-    $('.modal').toggle();
-    $('.ham_menu').toggleClass('active');
-  });
-
-  // closing fullscreen
-  $('#fullscreen .ham_menu').click(() => {
-    $('#fullscreen').fadeOut();
-    $('body').css('position', 'static');
-  });
-
-  // showing fullscreen
-  $('.container-image').click(() => {
-    $('#fullscreen').fadeIn();
-    $('body').css('position', 'fixed');
-  });
-
-  // print image
-  $('.print-areas').click(() => {
-    $('#fullscreen').css('background-image', `url(${actualRadio.printImage})`);
-    $('.print-areas').hide();
-    $('.remove-areas').show();
-  });
-
-  // remove areas
-  $('.remove-areas').click(() => {
-    $('#fullscreen').css('background-image', `url(${actualRadio.baseImage})`);
-    $('.remove-areas').hide();
-    $('.print-areas').show();
-  });
-
-  $('.modal-list').on('click', 'a', async e => {
-    let number = $(e.currentTarget).children().text().split(' - ');
-    number = number[0] - 1;
-    actualRadio = dataRadio[number];
-    await renderItem(actualRadio);
-    $('.modal').toggle();
-    $('.ham_menu').toggleClass('active');
-  });
-
-  // voice recognition
-  window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition || null;
-
-  // caso não suporte esta API DE VOZ
-  if (window.SpeechRecognition === null) {
-    $('.voice-recognition').hide();
-  } else {
-    const recognizer = new window.SpeechRecognition();
-    let radio_Struc;
-    recognizer.continuous = false;
-
-    recognizer.onresult = async event => {
-      for (let i = event.resultIndex; i < event.results.length; i++) {
-        radio_Struc = '';
-
-        if (event.results[i].isFinal) {
-          radio_Struc = event.results[i][0].transcript;
-          dataRadio.forEach(spokeRadio => {
-            const upper_name = spokeRadio.name.toUpperCase();
-
-            if (upper_name.includes(radio_Struc.toUpperCase())) {
-              console.log(spokeRadio.name + radio_Struc);
-              actualRadio = spokeRadio;
-            }
-          });
-        } else {
-          radio_Struc += event.results[i][0].transcript;
-        }
-      }
-
-      await renderItem(actualRadio);
-      $('.voice-recognition i').css('color', '#ebcbad');
-    };
-
-    $('.voice-recognition i').click(() => {
-      try {
-        recognizer.start();
-        $('.voice-recognition i').css('color', '#a4a4a4');
-      } catch (ex) {
-        alert(`error: ${ex.message}`);
-      }
-    });
-  }
-
-  function openNav() {
-    document.getElementById("mySidenav").style.left = "0";
-    document.body.classList.add('overlay');
-  }
-
-  function closeNav() {
-    document.getElementById("mySidenav").style.left = "-450px";
-    document.body.classList.remove('overlay');
-  }
-
-  var dropdown = document.getElementsByClassName("dropdown-btn");
-  var i;
-
-  for (i = 0; i < dropdown.length; i++) {
-    dropdown[i].addEventListener("click", function() {
-      this.classList.toggle("fa-minus");
-      var dropdownContent = this.nextElementSibling;
-      if (dropdownContent.style.display === "block") {
-        dropdownContent.style.display = "none";
-      } else {
-        dropdownContent.style.display = "block";
-      }
-    });
-  }
-});
-
-// Remova a função getJson() do arquivo main.js
-
-// Atualize o trecho do código $(document).ready(async () => { ... })
-// para verificar se os dados foram carregados antes de usar a variável dataRadio
-
-$(document).ready(async () => {
-  // Verifica se os dados foram carregados corretamente antes de prosseguir
-  if (!dataRadio) {
-    console.log('Data not loaded!'); // Exibe uma mensagem de erro no console caso os dados não tenham sido carregados corretamente
-    return;
-  }
-
-  let actualRadio = dataRadio[0]; // Inicializa actualRadio com o primeiro item do array dataRadio
-
-  // Restante do código para renderizar os elementos e adicionar eventos, conforme necessário
-  // ...
-});
-
-// Evento de clique no link "Localização"
-document.getElementById("opcao-localizacao").addEventListener("click", function (event) {
-  event.preventDefault(); // Impede que o link recarregue a página (caso ele tenha um "#" no href)
-
-  // Aqui você fará a requisição para obter o JSON e, em seguida, exibir a imagem no elemento img
-  fetch('assets/content/data.json') // Substitua "data.json" pelo caminho correto para o arquivo JSON
-    .then(response => response.json())
-    .then(data => {
-      // Aqui você pode manipular os dados do JSON conforme necessário
-      const imagemLocalizacao = document.getElementById('imagem-localizacao');
-      imagemLocalizacao.src = data.baseImage; // Define a imagem do JSON como src do elemento img
-    })
-    .catch(error => console.error('Erro ao obter dados do JSON:', error));
-});
-$(document).ready(async () => {
-  const e = await getJson();
-
-  // Ajustando a renderização inicial do menu
-  await renderList(e);
-  $(".submenu li:first-child a").addClass("active");
-  const initialData = e.find(item => item.number === "1");
-  await renderItem(initialData);
-
-  // Evento de clique nos itens do submenu
-  $(".submenu li a").click(async function () {
-    const number = $(this).data("number");
-    const data = e.find(item => item.number === number);
-
-    $(".submenu li a").removeClass("active");
-    $(this).addClass("active");
-
-    await renderItem(data);
-  });
-
-  // Evento de clique para exibir/ocultar o submenu
-  $(".dropdown-btn").click(function () {
-    $(this).toggleClass("fa-plus fa-minus");
-    $(this).siblings(".dropdown-container").toggle();
-  });
-
-  // Outros eventos específicos do seu menu podem ser adicionados aqui
-});
-
       async function loadData() {
         try {
           const response = await fetch('assets/content/data.json');
@@ -484,7 +234,7 @@ $(document).ready(async () => {
         <h1 class="number-text">SEIO MAXILAR</h1>
       </div>
       <a class="container-image" href="#">
-        <img src="./assets/img/base-1.jpg" alt="" />
+        <img src="" alt="" />
       </a>
       <div class="info">
         <p class="description">
@@ -518,11 +268,12 @@ CUIDADO: quando se observa mais do que uma imagem no exame só poderemos chamar 
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"
   ></script>
-  <link rel="stylesheet" href="style.css" />
-
-  
+  <script src="/node_modules/babel-polyfill/browser.js"></script>
 
   <script src="assets/js/app-min.js"></script>
+  
+
+
 
 
  

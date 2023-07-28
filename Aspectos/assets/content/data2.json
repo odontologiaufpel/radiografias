@@ -1,6 +1,6 @@
 [
 {
-    "number": "18",
+    "number": "1",
    "name": "Densidade Relativa (Conteúdo Interno)",
    "description": "Com relação à densidade (conteúdo interno), descrevem-se a lesões como: radiolúcidas (densidade escura em comparação ao osso ou tecidos vizinhos); radiopacas (densidade  clara,  comparativamente  ao  osso ou  tecidos vizinhos); ou mistas (apresenta ambas as densidades - normalmente radiolúcida com pontos ou áreas ou focos radiopacos). Importante: Há lesões que mudam sua densidade de acordo com sua evolução (podem iniciar com aspecto radiolúcido, passam por uma fase mista, até atingirem sua fase radiopaca, como é o caso da displasia fibrosa ou do tumor odontogênico adenomatóide, por exemplo).",
    "printImage": "./assets/img/85.png",
@@ -11,35 +11,35 @@
    
 
 { 
-    "number": "19",
+    "number": "2",
     "name": " Densidade Relativa (Conteúdo Interno)",
     "description": "Com relação à densidade (conteúdo interno), descrevem-se a lesões como: radiolúcidas (densidade escura em comparação ao osso ou tecidos vizinhos); radiopacas (densidade  clara,  comparativamente  ao  osso ou  tecidos vizinhos); ou mistas (apresenta ambas as densidades - normalmente radiolúcida com pontos ou áreas ou focos radiopacos). Importante: Há lesões que mudam sua densidade de acordo com sua evolução (podem iniciar com aspecto radiolúcido, passam por uma fase mista, até atingirem sua fase radiopaca, como é o caso da displasia fibrosa ou do tumor odontogênico adenomatóide, por exemplo).",
     "printImage": "./assets/img/876.png",
     "baseImage": "./assets/img/875.png"
   },
 { 
-    "number": "20",
+    "number": "3",
     "name": "Radiolúcida",
     "description": "Apresenta uma aparência escura, indicando que permite a passagem da radiação através dela, geralmente por apresentar menor densidade do que as estruturas ao redor, como osso ou outros tecidos calcificados. Representam o maior grupo de lesões e se formam pela destruição de trabéculas ósseas e/ou aumento dos espaços medulares, reabsorção do tecido ósseo ou, ainda, pela substituição do tecido ósseo por outro tecido com menor densidade (tecido mole ou líquido).",
     "printImage": "./assets/img/17.png",
     "baseImage": "./assets/img/P.png"
   },
   { 
-    "number": "21",
+    "number": "4",
     "name": "Radiolúcida",
     "description": "Apresenta uma aparência escura, indicando que permite a passagem da radiação através dela, geralmente por apresentar menor densidade do que as estruturas ao redor, como osso ou outros tecidos calcificados. Representam o maior grupo de lesões e se formam pela destruição de trabéculas ósseas e/ou aumento dos espaços medulares, reabsorção do tecido ósseo ou, ainda, pela substituição do tecido ósseo por outro tecido com menor densidade (tecido mole ou líquido).",
     "printImage": "./assets/img/17.png",
     "baseImage": "./assets/img/P.png"
   },
   {
-    "number": "22",
+    "number": "5",
     "name": "Radiopaca",
     "description": "Apresenta uma aparência branca ou opaca, indicando que não permite / barra a passagem da radiação através dela, geralmente por apresentar maior densidade do que as estruturas ao redor, como osso ou outros tecidos calcificados. São menos frequentes que as radiolúcidas e apresentam esse aspecto pela deposição de tecido mineralizado, aumento de espessura do tecido ósseo ou pelo aumento no número / espessamento das trabéculas ósseas e diminuição dos espaços medulares.  ",
     "printImage": "./assets/img/S.png",
     "baseImage": "./assets/img/19.png"
   },
   { 
-    "number": "23",
+    "number": "6",
     "name": "Mista",
     "description": "Uma lesão mista é geralmente uma combinação de tecidos ou substâncias que possuem diferentes densidades radiográficas. Essa mistura de características radiolúcidas e radiopacas pode ocorrer devido a várias razões, como diferentes tipos de tecidos envolvidos na lesão ou a presença de elementos calcificados no interior da lesão. Representa o menor grupo de lesões.",
     "printImage": "./assets/img/18.png",
@@ -47,21 +47,21 @@
   },
   { 
 
-    "number": "24",
+    "number": "7",
     "name": "Tecido Dentário",    
     "description": "Lesões cujo conteúdo interno tem radiopacidade semelhante à densidade de esmalte e dentina. Tipicamente associada aos odontomas composto e complexo.",
     "printImage": "./assets/img/20.png",
     "baseImage": "./assets/img/V.png"
   },
   { 
-    "number": "25",
+    "number": "8",
     "name": "Vidro Despolido - Casca de Laranja",
     "description": "Lesão que apresenta radiopacidade difusa e não nítida, lembrando um vidro fosco. Adquire esse padrão no trabeculado ósseo pelo aumento das trabéculas e diminuição dos espaços medulares.",
     "printImage": "./assets/img/21.png",
     "baseImage": "./assets/img/U.png"
   },
   { 
-    "number": "26",
+    "number": "9",
     "name": "Flocos de Algodão",
     "description": " Padrão de densidade mista, em que há focos radiopacos em uma área radiolúcida, assemelhando-se a flocos de algodão.",
     "printImage": "./assets/img/22.png",

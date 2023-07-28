@@ -1,0 +1,54 @@
+[
+    
+    {
+        "number": "1",
+        "name": " EFeito em Dentes",
+        "description": "A relação com os dentes pode estar localizada de três formas: (1) com a coroa; (2) com o ápice; e (3) com todo o dente. Por vezes estas características podem sugerir a natureza das lesões, pois lesões pericoronárias são quase sempre odontogênicas.",
+        "printImage": "./assets/img/94.png",
+        "baseImage": "./assets/img/93.PNG"
+      },
+        {
+          "number": "2",
+          "name": "Deslocamento Dentário",
+          "description": "Lesões que provocam deslocamento dos dentes próximos ou adjacentes. Quando o deslocamento se dá em sentido apical, normalmente as lesões possuem origem odontogênica, pois se desenvolvem acima das coroas ou na região pericoronário. Já quando o deslocamento ocorre em sentido coronal, a lesão pode possuir um caráter agressivo ou até maligno.",
+          "printImage": "./assets/img/63.jpg",
+          "baseImage": "./assets/img/64.jpg"
+        },
+      
+        
+        {
+          "number": "3",
+          "name": "Deslocamento Radicular",
+          "description": "Lesões que afastam as raízes dos dentes adjacentes, mas mantém as coroas em posição. Aspecto típico de lesões císticas.  ",
+          "printImage": "./assets/img/65.jpg",
+          "baseImage": "./assets/img/66.jpg"
+        },
+        {
+          "number": "4",
+          "name": " Reabsorção Radicular",
+          "description": "Lesões que causam a reabsorção das raízes de um ou vários dentes. Normalmente associadas a processos benignos com padrão de crescimento mais agressivo, como o ceratocisto odontogênico e o ameloblastoma.",
+          "printImage": "./assets/img/68.jpeg",
+          "baseImage": "./assets/img/67.jpeg"
+        },
+        {
+          "number": "5",
+          "name": " Atraso na Erupção - Retenção",
+          "description": "A lesão impede o ciclo normal de erupção dentária.",
+          "printImage": "./assets/img/70.jpg",
+          "baseImage": "./assets/img/69.jpg"
+        },
+        {
+          "number": "6",
+          "name": "Flutuação Dentária",
+          "description": "O padrão de flutuação dentária caracteriza-se pelo alargamento do espaço periodontal ao redor  da raiz e reabsorção óssea que inicia no terço apical em direção coronal das raízes, produzindo uma aparência de dentes flutuantes (sem suporte ósseo).",
+          "printImage": "./assets/img/72.jpg",
+          "baseImage": "./assets/img/71.jpg"
+        },
+        {
+          "number": "7",
+          "name": "Perda da Lâmina Dura + Aumento do Espaço do Ligamento Periodontal",
+          "description": " Lesões nas quais a lâmina dura desaparece, especialmente na região apical, e há aumento do espaço do ligamento periodontal. Normalmente associada a alterações inflamatórias de origem pulpar.",
+          "printImage": "./assets/img/73.jpg",
+          "baseImage": "./assets/img/74.jpeg"
+        }
+    ]
