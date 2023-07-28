@@ -1,7 +1,7 @@
 [
 
     {
-        "number": "1",
+        "number": "36",
         "name": "Delimitação e Contorno",
         "description": "As lesões podem se apresentar circunscritas (bem delimitadas), quando apresentam contornos bem definidos em sua periferia (quando é possível distinguir as margens da lesão, diferenciando-a   do   tecido   ósseo   de   aspecto   normal), independente de apresentarem halo ou margem ao redor. Por outro lado, as anomalias podem se apresentar difusas (mal delimitadas), com uma margem sem contornos definidos e não é possível distinguir na periferia da lesão sua diferenciação com o tecido ósseo de aspecto normal. Característica importante, pois pode direcionar a hipótese diagnóstica. Na maior parte das vezes lesões bem delimitadas apresentam crescimento mais lento, associado a lesões com comportamento benigno. Ao contrário, lesões difusas possuem crescimento mais rápido, característica normalmente associada ao comportamento mais agressivo e invasivo das lesões, comportamento maligno ou, ainda, inflamatório agudo.",
         "printImage": "./assets/img/90.png",
@@ -9,49 +9,49 @@
       },
       
         {
-          "number": "2",
+          "number": "37",
           "name": "Circunscrita - Bem Delimitada",
           "description": "Lesão que apresenta contornos bem definidos em sua periferia. Quando é possível identificar a zona de transição da lesão com o osso circundante de aspecto normal. Normalmente associada a lesões de crescimento lento, com comportamento benigno e pouco invasivo.  ",
           "printImage": "./assets/img/37.png",
           "baseImage": "./assets/img/38.png"
         },
         {
-          "number": "3",
+          "number": "38",
           "name": "Difusa - Mal Delimitada",
           "description": "Lesão com contornos sem definição, com amplas margens difusas, com um padrão por vezes permeativo. Normalmente associada a doenças com crescimento rápido, mais agressivo e maligno, mas pode também representar outras lesões de crescimento rápido, como as inflamatórias.",
           "printImage": "./assets/img/40.png",
           "baseImage": "./assets/img/39.png"
         },
         {
-          "number": "4",
+          "number": "39",
           "name": "Bordo Perfurado",
           "description": " Lesão circunscrita, normalmente tem aspecto radiolúcido, na qual é possível delimitar o contorno da lesão, mas não há linha ou faixa radiopaca a delimitando.",
           "printImage": "./assets/img/41.png",
           "baseImage": "./assets/img/42.png"
         },
         {
-          "number": "5",
+          "number": "40",
           "name": "Bordo Corticalizado",
           "description": "Lesão circunscrita, normalmente com aspecto radiolúcido, cujos bordos de uma são delimitados por uma linha radiopaca. ",
           "printImage": "./assets/img/43.png",
           "baseImage": "./assets/img/44.png"
         },
         {
-          "number": "6",
+          "number": "41",
           "name": "Bordo Esclerótico",
           "description": "Lesão, normalmente radiolúcida, em que o bordo é representado por uma faixa radiopaca, que pode dar a lesão tanto um aspecto circunscrito quanto difuso.",
           "printImage": "./assets/img/45.png",
           "baseImage": "./assets/img/46.png"
         },
         {
-          "number": "7",
+          "number": "42",
           "name": "Bordo Encapsulado",
           "description": "Lesão, normalmente radiopaca, cujo bordo é representado por uma linha ou por uma faixa radiolúcida. Pode dar a lesão tanto um aspecto circunscrito, mais comum, quanto difuso.",
           "printImage": "./assets/img/48.png",
           "baseImage": "./assets/img/47.png"
         },
         {
-          "number": "8",
+          "number": "43",
           "name": "Aspecto de Roído de Traça",
           "description": " Lesão com destruição óssea de aspecto lítico e permeativo, com pequenas e inúmeras áreas de lise óssea. Pode ser observada em associação com condições benignas mais agressivas, de crescimento rápido, e, especialmente, malignas, este tipo de bordo dá à lesão aspecto difuso.",
           "printImage": "./assets/img/50.png",
@@ -59,7 +59,7 @@
         },
       
         {
-          "number": "9",
+          "number": "44",
           "name": "Aspecto de Roído de Traça",
           "description": " As corticais ósseas podem ser afetadas por uma lesão de diferentes formas, desde sua preservação até seu rompimento. Ainda, lesões podem causar reações no periósteo, especialmente a formação de novo osso subperiosteal, em diferentes padrões. Essas reações periosteais, que são mais comuns na mandíbula que na maxila, podem ser vistas em radiografias panorâmicas e, especialmente, radiografias oclusais totais ou parciais lateralizadas.",
           "printImage": "./assets/img/92.png",

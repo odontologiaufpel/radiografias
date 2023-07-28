@@ -1,7 +1,7 @@
 [
 
     {
-        "number": "1",
+        "number": "59",
         "name": "Aumento do espaço do Ligamento Periodontal Generalizado",
         "description": " Lesões que causam o aumento (espessamento) do espaço do ligamento periodontal de vários dentes, sem necessariamente haver perda da lâmina dura. Normalmente associado a lesões malignas ou metástases tumorais.",
         "printImage": "./assets/img/76.jpg",
@@ -9,7 +9,7 @@
       },
     
       {
-        "number": "2",
+        "number": "60",
         "name": " Efeito em Estruturas Anatômicas",
         "description": "Não só as corticais (tábuas) ósseas ou os dentes adjacentes podem ser afetados, as lesões podem causar destruição de estruturas anatômicas, como deslocamento do canal mandibular ou do soalho da órbita, rompimento de soalho de seio maxilar e fossa nasal, também das paredes do canal mandibular e base de mandíbula; assim como podem invadir estruturas importantes, como o próprio seio maxilar. Estas destruições e invasões de estruturas anatômicas importantes tem visão limitada em exames convencionais (2D).",
         "printImage": "./assets/img/96.png",
@@ -17,14 +17,14 @@
       },
     
       {
-        "number": "3",
+        "number": "61",
         "name": " Deslocamento de Estruturas Anatômicas",
         "description": "A Lesão deslocou o trajeto normal do canal mandibular devido a sua expansão. Porém neste caso preservou suas corticais. Normalmente lesões que deslocam a estrutura estão associadas a lesões odontogênicas, de crescimento lento e benigno, porém mais agressivo.",
         "printImage": "./assets/img/78.jpg",
         "baseImage": "./assets/img/77.bmp"
       },
       {
-        "number": "4",
+        "number": "62",
         "name": " Invasão de Estruturas Anatômicas",
         "description": "A lesão rompeu as paredes do canal mandibular, invadindo-o. Normalmente lesões que invadem a estrutura, pelo rompimento de suas paredes corticais, estão associadas a lesões de crescimento rápido, agressivas e, muitas vezes, malignas.   ",
         "printImage": "./assets/img/80.jpg",
