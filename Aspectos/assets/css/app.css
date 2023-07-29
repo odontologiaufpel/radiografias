@@ -951,7 +951,7 @@ ul.modal-list6 li a:hover {
 
 body{
   min-height: 100vh;
-  background: #f5f4f5;
+  background:rgba(64,81,128,1);
   background-size: cover;
   background-position: center;
 }
@@ -975,7 +975,7 @@ body{
 
 .side-bar .menu{
 
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .side-bar .menu .item{
@@ -997,7 +997,7 @@ body{
 
 .side-bar .menu .item a:hover{
   background: #757474;
-  transition: 0.3s ease;
+
 }
 
 .side-bar .menu .item i{
@@ -1008,7 +1008,7 @@ body{
   position: absolute;
   right: 0;
   margin: 20px;
-  transition: 0.3s ease;
+
 }
 
 .side-bar .menu .item .sub-menu{
@@ -1070,7 +1070,7 @@ body{
 
 .menu-texto{
 
-  font-size: 22px;
+  font-size: 27px;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: bold;

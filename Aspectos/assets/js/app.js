@@ -45,7 +45,7 @@ $(document).ready(async () => {
   await renderItem(actualRadio);
   await renderList(dataRadio); // next button action
 
-  $('.next').click(async () => {
+  $('.next').click(async () => {z
     actualRadio = dataRadio[actualRadio.number % dataRadio.length];
     await renderItem(actualRadio);
     $('.remove-areas').hide();
