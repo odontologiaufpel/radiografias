@@ -951,7 +951,7 @@ ul.modal-list6 li a:hover {
 
 body{
   min-height: 100vh;
-  background: #f5f4f5;
+  background:rgba(64,81,128,1);
   background-size: cover;
   background-position: center;
 }
@@ -975,7 +975,7 @@ body{
 
 .side-bar .menu{
 
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .side-bar .menu .item{
@@ -997,7 +997,7 @@ body{
 
 .side-bar .menu .item a:hover{
   background: #757474;
-  transition: 0.3s ease;
+
 }
 
 .side-bar .menu .item i{
@@ -1008,7 +1008,7 @@ body{
   position: absolute;
   right: 0;
   margin: 20px;
- 
+
 }
 
 .side-bar .menu .item .sub-menu{
@@ -1070,10 +1070,186 @@ body{
 
 .menu-texto{
 
-  font-size: 22px;
+  font-size: 27px;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
  
   margin-top: 120px;
+}
+/***** General styling *****/
+body {
+  color: #1F2161;
+}
+
+p {
+  text-align: justify;
+  font-size: 22px;
+}
+
+a {
+  color: #0F773C;
+}
+
+a:hover {
+  color: #CB831E;
+  text-decoration: none;
+}
+
+
+
+/***** Nav *****/
+/* NOTE: smooth css animations */
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.htmlBody #sidebarWrapper,
+#sidebarWrapper .sidebar-brand > a,
+.htmlBody .page-content,
+#sidebarWrapper .navMenu ul li a,
+#show-sidebar,
+#close-sidebar {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+
+
+/***** When sidebar is toggled *****/
+.htmlBody.toggled #sidebarWrapper {
+  left: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .htmlBody.toggled .page-content {
+    padding-left: 300px;
+  }
+}
+
+
+
+/***** Open/Close Sidebar *****/
+#show-sidebar {
+  position: fixed;
+  left: 0;
+  top: 1.3rem;
+  border-radius: 0 4px 4px 0px;
+  width: 2.5rem;
+  transition-delay: 0.3s;
+  z-index: 2;
+  background-color: #102A83;
+  color: #FEFDFB;
+  font-size: 1.3em;
+  padding-bottom: 0;
+}
+
+#hamburger {
+  margin-bottom: 0;
+}
+
+.htmlBody.toggled #show-sidebar {
+  left: -40px;
+}
+
+.htmlBody.toggled #close-sidebar {
+  color: #1F2161;
+}
+
+.htmlBody.toggled #close-sidebar:hover {
+  color: #0F773C;
+}
+
+
+
+/***** Sidebar: general *****/
+#sidebarWrapper {
+  width: 18.8rem;
+  height: 100%;
+  max-height: 100%;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  z-index: 2;
+  overflow-y: auto;
+  background: #F2F2F2;
+}
+
+#sidebarWrapper ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+/***** Sidebar brand & logo *****/
+#sidebarWrapper .sidebar-brand {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+#sidebarWrapper .sidebar-brand > a {
+  text-transform: uppercase;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+#sidebarWrapper .sidebar-brand #close-sidebar {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.sidebar-logo {
+  margin-top: 0;
+}
+
+
+
+/***** Sidebar nav links *****/
+.navMenu {
+  padding-bottom: 10px;
+}
+
+.navMenu ul li a {
+  padding: 8px 30px 8px 20px;
+}
+
+.sidebar-brand > a, .navMenu ul li a {
+  color: #1F2161;
+}
+
+.navMenu ul li:hover > a,
+.sidebar-brand > a:hover {
+  color: #0F773C;
 }
