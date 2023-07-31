@@ -1,4 +1,18 @@
 
+$(document).ready(async () => {
+  // Verifica se os dados foram carregados corretamente antes de prosseguir
+  if (!dataRadio) {
+    console.log('Data not loaded!'); // Exibe uma mensagem de erro no console caso os dados não tenham sido carregados corretamente
+    return;
+  }
+
+  let actualRadio = dataRadio[0]; // Inicializa actualRadio com o primeiro item do array dataRadio
+
+  // Restante do código para renderizar os elementos e adicionar eventos, conforme necessário
+  // ...
+});
+
+
 async function getJson() {
   try {
     const response = await fetch('assets/content/data.json');
@@ -350,6 +364,28 @@ async function renderItem6({
     console.log("Error!", e);
   }
 }
+
+
+
+async function renderItem7({
+  number: e,
+  name: n,
+  description: t,
+  baseImage: a,
+  printImage: r
+}) {
+  try {
+    $(".title").text(n),
+      $(".number-text").text(n),
+      $(".container-image img").attr("src", a),
+      $(".description").text(t),
+      $("#fullscreen").css("backgroundImage", `url(${a})`);
+  } catch (e) {
+    console.log("Error!", e);
+  }
+}
+
+
 // até aqui foi feita a substituição 
 
 // Lógica para renderizar os itens da lista 1 no HTML modal-list daté modal-list6
@@ -607,4 +643,90 @@ $(document).ready(async () => {
         }
       });
   }
+});
+
+
+// Função para carregar os dados JSON
+async function getJson(url) {
+  try {
+    const response = await fetch(url);
+    return await response.json();
+  } catch (e) {
+    console.log('Error!', e);
+  }
+}
+
+// Função para renderizar o item na página
+async function renderItem(item) {
+  try {
+    $('.title').text(item.name);
+    $('.number-text').text(item.name);
+    $('.container-image img').attr('src', item.baseImage);
+    $('.description').text(item.description);
+    $('#fullscreen').css('backgroundImage', `url(${item.baseImage})`);
+  } catch (e) {
+    console.log('Error!', e);
+  }
+}
+
+// Função para renderizar a lista na página
+async function renderList(list, targetClass) {
+  list.map(({ number, name }) => {
+    $(`.${targetClass}`).append(
+      `<li class="radio-item">
+        <a href="#"> <span class="number-radio">${number} - </span>${name}</a>
+      </li>`
+    );
+  });
+}
+
+$(document).ready(async () => {
+  // Carregar todos os dados JSON antes de prosseguir
+  const dataRadio = await getJson('assets/content/data.json');
+  const data2 = await getJson('assets/content/data2.json');
+  const data3 = await getJson('assets/content/data3.json');
+  const data4 = await getJson('assets/content/data4.json');
+  const data5 = await getJson('assets/content/data5.json');
+  const data6 = await getJson('assets/content/data6.json');
+  const data7 = await getJson('assets/content/data7.json');
+
+  // Verifica se os dados foram carregados corretamente antes de prosseguir
+  if (!dataRadio || !data2 || !data3 || !data4 || !data5 || !data6 || !data7) {
+    console.log('Data not loaded!');
+    return;
+  }
+
+  // Definir o estado atual com o primeiro item do array dataRadio
+  let actualRadio = dataRadio[0];
+
+  // Renderizar o item e a lista inicialmente
+  await renderItem(actualRadio);
+  await renderList(dataRadio, 'modal-list');
+  await renderList(data2, 'modal-list2');
+  await renderList(data3, 'modal-list3');
+  await renderList(data4, 'modal-list4');
+  await renderList(data5, 'modal-list5');
+  await renderList(data6, 'modal-list6');
+  await renderList(data7, 'modal-list7');
+
+
+  // Restante do código para adicionar eventos e interações com os botões, conforme necessário
+  // ...
+  $(document).ready(function() {
+    // jQuery para alternar submenus
+    $('.sub-btn').click(function() {
+      
+    });
+  
+    // jQuery para expandir e recolher a barra lateral
+    $('.menu-btn').click(function() {
+      $('.side-bar').addClass('active');
+      $('.menu-btn').css("visibility", "hidden");
+    });
+  
+    $('.close-btn').click(function() {
+      $('.side-bar').removeClass('active');
+      $('.menu-btn').css("visibility", "visible");
+    });
+  });
 });
