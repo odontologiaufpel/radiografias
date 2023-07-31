@@ -533,17 +533,7 @@ $(document).ready(async () => {
         $(".remove-areas").hide(),
         $(".print-areas").show();
     }),
-    $(".modal-list").on("click", "a", async t => {
-      let a = $(t.currentTarget)
-        .children()
-        .text()
-        .split(" - ");
-      (a = a[0] - 1),
-        (n = e[a]),
-        await renderItem(n),
-        $(".modal").toggle(),
-        $(".ham_menu").toggleClass("active");
-    }),
+   
     $(".modal-list2").on("click", "a", async t => {
       let a = $(t.currentTarget)
         .children()
@@ -645,43 +635,40 @@ $(document).ready(async () => {
   }
 });
 
-
-// Função para carregar os dados JSON
-async function getJson(url) {
+// Função para buscar o JSON de um arquivo
+async function getJson(file) {
   try {
-    const response = await fetch(url);
-    return await response.json();
+    const response = await fetch(file);
+    const json = await response.json();
+    return json;
   } catch (e) {
     console.log('Error!', e);
   }
 }
 
-// Função para renderizar o item na página
-async function renderItem(item) {
+// Função para renderizar o item atual na tela
+async function renderItem({ number, name, description, baseImage, printImage }) {
   try {
-    $('.title').text(item.name);
-    $('.number-text').text(item.name);
-    $('.container-image img').attr('src', item.baseImage);
-    $('.description').text(item.description);
-    $('#fullscreen').css('backgroundImage', `url(${item.baseImage})`);
+    $('.title').text(name);
+    $('.number-text').text(name);
+    $('.container-image img').attr('src', baseImage);
+    $('.description').text(description);
+    $('#fullscreen').css('backgroundImage', `url(${baseImage})`);
   } catch (e) {
     console.log('Error!', e);
   }
 }
 
-// Função para renderizar a lista na página
-async function renderList(list, targetClass) {
-  list.map(({ number, name }) => {
-    $(`.${targetClass}`).append(
-      `<li class="radio-item">
-        <a href="#"> <span class="number-radio">${number} - </span>${name}</a>
-      </li>`
-    );
+// Função para renderizar a lista de itens no modal
+async function renderList(arr, modalClass) {
+  arr.map(({ number, name }) => {
+    $(`.${modalClass}`).append(`<li class="radio-item">
+      <a href="#"> <span class="number-radio">${number} - </span>${name}</a>
+    </li>`);
   });
 }
 
 $(document).ready(async () => {
-  // Carregar todos os dados JSON antes de prosseguir
   const dataRadio = await getJson('assets/content/data.json');
   const data2 = await getJson('assets/content/data2.json');
   const data3 = await getJson('assets/content/data3.json');
@@ -690,16 +677,8 @@ $(document).ready(async () => {
   const data6 = await getJson('assets/content/data6.json');
   const data7 = await getJson('assets/content/data7.json');
 
-  // Verifica se os dados foram carregados corretamente antes de prosseguir
-  if (!dataRadio || !data2 || !data3 || !data4 || !data5 || !data6 || !data7) {
-    console.log('Data not loaded!');
-    return;
-  }
+  let actualRadio = dataRadio[0]; // Inicializa com o primeiro item
 
-  // Definir o estado atual com o primeiro item do array dataRadio
-  let actualRadio = dataRadio[0];
-
-  // Renderizar o item e a lista inicialmente
   await renderItem(actualRadio);
   await renderList(dataRadio, 'modal-list');
   await renderList(data2, 'modal-list2');
@@ -709,24 +688,161 @@ $(document).ready(async () => {
   await renderList(data6, 'modal-list6');
   await renderList(data7, 'modal-list7');
 
-
-  // Restante do código para adicionar eventos e interações com os botões, conforme necessário
-  // ...
-  $(document).ready(function() {
-    // jQuery para alternar submenus
-    $('.sub-btn').click(function() {
-      
-    });
-  
-    // jQuery para expandir e recolher a barra lateral
-    $('.menu-btn').click(function() {
-      $('.side-bar').addClass('active');
-      $('.menu-btn').css("visibility", "hidden");
-    });
-  
-    $('.close-btn').click(function() {
-      $('.side-bar').removeClass('active');
-      $('.menu-btn').css("visibility", "visible");
-    });
+  // Botão próximo
+  $('.next').click(async () => {
+    actualRadio = dataRadio[actualRadio.number % dataRadio.length];
+    await renderItem(actualRadio);
+    $('.remove-areas').hide();
+    $('.print-areas').show();
   });
+
+  // Botão anterior
+  $('.previous').click(async () => {
+    actualRadio.number - 2 < 0
+      ? (actualRadio = dataRadio[(dataRadio.length - 1) % dataRadio.length])
+      : (actualRadio = dataRadio[(actualRadio.number - 2) % dataRadio.length]);
+    await renderItem(actualRadio);
+    $('.remove-areas').hide();
+    $('.print-areas').show();
+  });
+
+  // Abrir modal
+  $('header .ham_menu').click(() => {
+    $('.modal').toggle();
+    $('.ham_menu').toggleClass('active');
+  });
+
+  // Fechar fullscreen
+  $('#fullscreen .ham_menu').click(() => {
+    $('#fullscreen').fadeOut();
+    $('body').css('position', 'static');
+  });
+
+  // Mostrar fullscreen
+  $('.container-image').click(() => {
+    $('#fullscreen').fadeIn();
+    $('body').css('position', 'fixed');
+  });
+
+  // Clicar para mostrar imagem de impressão
+  $('.print-areas').click(() => {
+    $('#fullscreen').css('background-image', `url(${actualRadio.printImage})`);
+    $('.print-areas').hide();
+    $('.remove-areas').show();
+  });
+
+  // Clicar para remover áreas
+  $('.remove-areas').click(() => {
+    $('#fullscreen').css('background-image', `url(${actualRadio.baseImage})`);
+    $('.remove-areas').hide();
+    $('.print-areas').show();
+  });
+
+  // Clicar em um item da lista para selecioná-lo
+  $('.modal-list').on('click', 'a', async (event) => {
+    let number = $(event.currentTarget).children().text().split(' - ')[0] - 1;
+    actualRadio = dataRadio[number];
+    await renderItem(actualRadio);
+    $('.modal').toggle();
+    $('.ham_menu').toggleClass('active');
+  });
+  // Função para tratar o clique em um item da lista modal-list2
+$('.modal-list2').on('click', 'a', async (event) => {
+  let number = $(event.currentTarget).children().text().split(' - ')[0] - 1;
+  actualRadio = data2[number];
+  await renderItem(actualRadio);
+  $('.modal').toggle();
+  $('.ham_menu').toggleClass('active');
 });
+
+// Função para tratar o clique em um item da lista modal-list3
+$('.modal-list3').on('click', 'a', async (event) => {
+  let number = $(event.currentTarget).children().text().split(' - ')[0] - 1;
+  actualRadio = data3[number];
+  await renderItem(actualRadio);
+  $('.modal').toggle();
+  $('.ham_menu').toggleClass('active');
+});
+
+// Função para tratar o clique em um item da lista modal-list4
+$('.modal-list4').on('click', 'a', async (event) => {
+  let number = $(event.currentTarget).children().text().split(' - ')[0] - 1;
+  actualRadio = data4[number];
+  await renderItem(actualRadio);
+  $('.modal').toggle();
+  $('.ham_menu').toggleClass('active');
+});
+
+// Função para tratar o clique em um item da lista modal-list5
+$('.modal-list5').on('click', 'a', async (event) => {
+  let number = $(event.currentTarget).children().text().split(' - ')[0] - 1;
+  actualRadio = data5[number];
+  await renderItem(actualRadio);
+  $('.modal').toggle();
+  $('.ham_menu').toggleClass('active');
+});
+
+// Função para tratar o clique em um item da lista modal-list6
+$('.modal-list6').on('click', 'a', async (event) => {
+  let number = $(event.currentTarget).children().text().split(' - ')[0] - 1;
+  actualRadio = data6[number];
+  await renderItem(actualRadio);
+  $('.modal').toggle();
+  $('.ham_menu').toggleClass('active');
+});
+
+// Função para tratar o clique em um item da lista modal-list7
+$('.modal-list7').on('click', 'a', async (event) => {
+  let number = $(event.currentTarget).children().text().split(' - ')[0] - 1;
+  actualRadio = data7[number];
+  await renderItem(actualRadio);
+  $('.modal').toggle();
+  $('.ham_menu').toggleClass('active');
+});
+
+
+  // Reconhecimento de voz
+  if (window.SpeechRecognition === null) {
+    $('.voice-recognition').hide();
+  } else {
+    const recognizer = new window.SpeechRecognition();
+    recognizer.continuous = false;
+    let radioStruc;
+
+    recognizer.onresult = async (event) => {
+      for (let i = event.resultIndex; i < event.results.length; i++) {
+        radioStruc = '';
+
+        if (event.results[i].isFinal) {
+          radioStruc = event.results[i][0].transcript;
+          dataRadio.forEach((spokeRadio) => {
+            const upperName = spokeRadio.name.toUpperCase();
+
+            if (upperName.includes(radioStruc.toUpperCase())) {
+              console.log(spokeRadio.name + radioStruc);
+              actualRadio = spokeRadio;
+            }
+          });
+        } else {
+          radioStruc += event.results[i][0].transcript;
+        }
+      }
+
+      await renderItem(actualRadio);
+      $('.voice-recognition i').css('color', '#ebcbad');
+    };
+
+    $('.voice-recognition i').click(() => {
+      try {
+        recognizer.start();
+        $('.voice-recognition i').css('color', '#a4a4a4');
+      } catch (ex) {
+        alert(`Error: ${ex.message}`);
+      }
+    });
+  }
+});
+
+
+
+
