@@ -949,12 +949,17 @@ ul.modal-list6 li a:hover {
   font-family: "Poppins", sans-serif;
 }
 
-body{
+
+  body{
+  margin-top: 40px;
   min-height: 100vh;
   background:  rgba(60,60,60,1);
   background-size: cover;
   background-position: center;
+  margin-bottom: 40px;
+  margin-right: 40px;
 }
+ 
 
 .side-bar{
   background: rgba(15, 4, 4, 0.1);
