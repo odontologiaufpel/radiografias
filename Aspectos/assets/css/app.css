@@ -951,7 +951,7 @@ ul.modal-list6 li a:hover {
 
 body{
   min-height: 100vh;
-  background: #f5f4f5;
+  background:  rgba(60,60,60,1);
   background-size: cover;
   background-position: center;
 }
@@ -1035,7 +1035,7 @@ body{
 
 .menu-btn {
   position: relative;
-  color: #0a0a0a;
+  color: #e9e8f0;
   font-size: 70px;
   margin: 0 auto;
   cursor: pointer;
